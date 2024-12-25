@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Furniture",
+    "Description": "Types of furniture including tables, chairs, sofas, etc."
+  },
+  {
+    "Name": "Clothing",
+    "Description": "Various clothing types including shirts, pants, jackets, etc."
+  },
+  {
+    "Name": "Accessories",
+    "Description": "Fashion accessories like watches, bags, and jewelry."
+  },
+  {
+    "Name": "Electronics",
+    "Description": "Electronics products such as phones, laptops, and home appliances."
+  }
+]

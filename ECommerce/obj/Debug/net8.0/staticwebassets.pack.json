@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\dining-table.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\laptop.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\laptop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\mens-tshirt.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\mens-tshirt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\smartphone.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\smartphone.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\sofa-set.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\womens-necklace.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\womens-necklace.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ECommerce.props",
+      "PackagePath": "build\\ECommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ECommerce.props",
+      "PackagePath": "buildMultiTargeting\\ECommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ECommerce.props",
+      "PackagePath": "buildTransitive\\ECommerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "IKEA",
+    "Description": "Global leader in ready-to-assemble furniture."
+  },
+  {
+    "Name": "Nike",
+    "Description": "Popular athletic apparel and equipment brand."
+  },
+  {
+    "Name": "Apple",
+    "Description": "Leading electronics brand known for its computers, smartphones, and wearables."
+  },
+  {
+    "Name": "Samsung",
+    "Description": "Electronics and home appliance giant."
+  }
+]

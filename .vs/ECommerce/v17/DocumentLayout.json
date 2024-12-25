@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{427AAF57-18C6-4829-8C38-E1D7C18AE9AA}|ECommerce.Repo\\ECommerce.Repo.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce.repo\\data\\dataseed\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{427AAF57-18C6-4829-8C38-E1D7C18AE9AA}|ECommerce.Repo\\ECommerce.Repo.csproj|solutionrelative:ecommerce.repo\\data\\dataseed\\products.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Program.cs",
+              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
+              "RelativeToolTip": "ECommerce\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T19:58:45.071Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T22:13:00.7Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "products.json",
+              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\Data\\DataSeed\\products.json",
+              "RelativeDocumentMoniker": "ECommerce.Repo\\Data\\DataSeed\\products.json",
+              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\Data\\DataSeed\\products.json",
+              "RelativeToolTip": "ECommerce.Repo\\Data\\DataSeed\\products.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-20T18:53:05.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "ECommerce\\appsettings.json",
+              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeToolTip": "ECommerce\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T14:47:02.786Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

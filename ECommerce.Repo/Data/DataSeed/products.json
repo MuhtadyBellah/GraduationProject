@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "Sofa Set",
+    "Description": "A comfortable 3-seater sofa for your living room.",
+    "PictureUrl": "Images/Products/sofa-set.jpg",
+    "Price": 599.99,
+    "Quantity": 10,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Dining Table",
+    "Description": "A stylish wooden dining table with 6 chairs.",
+    "PictureUrl": "Images/Products/dining-table.jpg",
+    "Price": 399.99,
+    "Quantity": 5,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "Men's T-shirt",
+    "Description": "A casual cotton T-shirt for men.",
+    "PictureUrl": "Images/Products/mens-tshirt.jpg",
+    "Price": 19.99,
+    "Quantity": 50,
+    "ProductBrandId": 2,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "Women's Necklace",
+    "Description": "A beautiful gold necklace with a pendant.",
+    "PictureUrl": "Images/Products/womens-necklace.jpg",
+    "Price": 129.99,
+    "Quantity": 25,
+    "ProductBrandId": 3,
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "Smartphone",
+    "Description": "A 64GB smartphone with a powerful camera.",
+    "PictureUrl": "Images/Products/smartphone.jpg",
+    "Price": 699.99,
+    "Quantity": 30,
+    "ProductBrandId": 4,
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "Laptop",
+    "Description": "A lightweight laptop with 16GB RAM and 512GB SSD.",
+    "PictureUrl": "Images/Products/laptop.jpg",
+    "Price": 999.99,
+    "Quantity": 20,
+    "ProductBrandId": 4,
+    "ProductTypeId": 4
+  }
+]
