@@ -53,6 +53,10 @@ namespace ECommerce.Repo.Data.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("integer");
 
+                    b.Property<string>("UrlGlb")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProductBrandId");

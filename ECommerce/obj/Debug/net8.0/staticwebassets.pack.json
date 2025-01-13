@@ -1,28 +1,92 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\dining-table.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\dining-table.jpg"
     },
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\laptop.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\laptop.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\laptop.jpg"
     },
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\mens-tshirt.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\mens-tshirt.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\mens-tshirt.jpg"
     },
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\smartphone.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\smartphone.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\smartphone.jpg"
     },
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\sofa-set.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\sofa-set.jpg"
     },
     {
-      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\womens-necklace.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\womens-necklace.jpg"
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\womens-necklace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\air_jordan_1.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\air_jordan_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\basic_t-shirt_and_pants.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\basic_t-shirt_and_pants.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\canon_at-1_retro_camera.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\canon_at-1_retro_camera.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\chinese_style_tea_table.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\chinese_style_tea_table.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\headphones_free_model_by_oscar_creative.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\headphones_free_model_by_oscar_creative.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\samsung_family_hub_fridge.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\samsung_family_hub_fridge.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\samsung_galaxy_s22_ultra.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\samsung_galaxy_s22_ultra.png"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\sci-fi_portal_gateway.glb"
+    },
+    {
+      "Id": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\sci-fi_portal_gateway.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -6,6 +6,7 @@ C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerc
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.AssemblyInfoInputs.cache
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.AssemblyInfo.cs
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.csproj.CoreCompileInputs.cache
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.sourcelink.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.dll
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\refint\ECommerce.Core.dll
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Debug\net8.0\ECommerce.Core.pdb

@@ -10,6 +10,6 @@ namespace ECommerce.Helper
         public ProductPicture(IConfiguration config) => _config = config;
         public string Resolve(Product source, ProductDTO destination, string destMember, ResolutionContext context)
             => (!string.IsNullOrEmpty(source.PictureUrl)) ? $"{_config["ApiBaseUrl"]}{source.PictureUrl}" : string.Empty;
-        
+
     }
 }

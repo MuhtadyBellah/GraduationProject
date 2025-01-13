@@ -5,6 +5,7 @@
         public required string Name { get; set; }
         public string? Description { get; set; }
         public required string PictureUrl { get; set; }
+        public required string UrlGlb { get; set; }
         public decimal Price { get; set; }
 
         // Foreign Key for ProductBrand
@@ -16,5 +17,6 @@
         public ProductType ProductType { get; set; }
 
         public int Quantity { get; set; }
+        //public bool isFav { get; set; } = false;
     }
 }

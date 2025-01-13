@@ -23,7 +23,10 @@ namespace ECommerce.Repo.Data.Config
 
             builder.Property(p => p.PictureUrl)
                 .IsRequired();
-            
+
+            builder.Property(p => p.UrlGlb)
+                .IsRequired();
+
             builder.Property(p => p.Price).IsRequired()
                 .HasColumnType("decimal(18,2)");
         }

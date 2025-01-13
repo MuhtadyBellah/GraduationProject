@@ -1,3 +1,10 @@
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.csproj.AssemblyReference.cache
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.AssemblyInfoInputs.cache
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.AssemblyInfo.cs
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.sourcelink.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\appsettings.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\ECommerce.staticwebassets.runtime.json
@@ -186,13 +193,6 @@ C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\ECommerce.Ser
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\ECommerce.Core.pdb
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\ECommerce.Repo.pdb
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\bin\Debug\net8.0\ECommerce.Service.pdb
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.csproj.AssemblyReference.cache
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.AssemblyInfoInputs.cache
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.AssemblyInfo.cs
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.csproj.CoreCompileInputs.cache
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\ECommerce.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce\obj\Debug\net8.0\staticwebassets\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssets.props

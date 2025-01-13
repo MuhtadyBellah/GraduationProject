@@ -177,6 +177,22 @@
   },
   {
     "ContainingType": "ECommerce.Controllers.ProductController",
+    "Method": "GetItemPictureGlb",
+    "RelativePath": "api/Product/{id}/imgGlb",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.ProductController",
     "Method": "GetProductBrands",
     "RelativePath": "api/Product/Brands",
     "HttpMethod": "GET",

@@ -37,7 +37,18 @@ namespace ECommerce.Controllers
             return Ok(new Pagination<ProductDTO>(param.PageIndex, param.PageSize, mapProducts, count));
         }
 
-        
+        //[HttpGet("Favorite")]
+        //public async Task<ActionResult<Pagination<ProductDTO>>> GetFavorites([FromQuery] ProductSpecParams param)
+        //{
+        //    var spec = new ProductSpecific(param);
+        //    var products = await _context.GetAllAsync(spec);
+        //    var mapProducts = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(products);
+        //    var CountSpec = new ProductFilterationCount(param);
+        //    var count = await _context.GetCountAsync(CountSpec);
+
+        //    return Ok(new Pagination<ProductDTO>(param.PageIndex, param.PageSize, mapProducts, count));
+        //}
+
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ProductDTO), 200)]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductById(int id)
@@ -61,7 +72,20 @@ namespace ECommerce.Controllers
             if (MapProduct is null) return NotFound();
             return Redirect(MapProduct.PictureUrl);
         }
-   
+
+        [HttpGet("{id}/imgGlb")]
+        public async Task<IActionResult> GetItemPictureGlb(int id)
+        {
+            var spec = new ProductSpecific(id);
+            var product = await _context.GetByIdAsync(spec);
+            var MapProduct = _mapper.Map<Product, ProductDTO>(product);
+            var fileUrl = MapProduct.UrlGlb;
+            if (string.IsNullOrEmpty(fileUrl))
+                return NotFound(new { Message = "File URL not found." });
+
+            return Ok(fileUrl.ToString());
+        }
+
         /* Put & Post
         [HttpPut]
         public async Task<ActionResult<IEnumerable<ProductDTO>>> PutProduct(ProductParams updated)
