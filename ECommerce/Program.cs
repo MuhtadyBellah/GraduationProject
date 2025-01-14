@@ -14,7 +14,6 @@ namespace ECommerce
     {
         public static async Task Main(string[] args)
         {
-            /*
             #region NGrok
             var ngrokProcess = new Process();
             ngrokProcess.EnableRaisingEvents = true;
@@ -38,7 +37,7 @@ namespace ECommerce
                 Console.WriteLine($"Failed to start ngrok process: {ex.Message}");
             }
             #endregion
-            */
+            
 
             var builder = WebApplication.CreateBuilder(args);            
             #region Config Services - Add services to the container.
