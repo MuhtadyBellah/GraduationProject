@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KxvRm5mSL2hObyC6X2ZULrnxAL70WDKnUkGiv9AR/nk=",
+  "Hash": "ORcUXjOG0CgDsXaF5VTj6ZWW5TXXrP81XE4EtgFJFPM=",
   "Source": "ECommerce",
   "BasePath": "_content/ECommerce",
   "Mode": "Default",
@@ -10,429 +10,2382 @@
     {
       "Name": "ECommerce\\wwwroot",
       "Source": "ECommerce",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/air_jordan_1.glb",
+      "RelativePath": "Images/Products/air_jordan_1#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qwdun1hsd4",
+      "Integrity": "6sy5F1sIUKJQ2qCArcSPQbPOjx7cz91Xb3daqSbf/vU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\air_jordan_1.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/air_jordan_1.png",
+      "RelativePath": "Images/Products/air_jordan_1#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "tds0dog7yc",
+      "Integrity": "TyPsW9XWtSmgYIhCHYDNNp0tFu6PwVYFHXCWyg+xTaE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\air_jordan_1.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/basic_t-shirt_and_pants.glb",
+      "RelativePath": "Images/Products/basic_t-shirt_and_pants#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "nujgknhmho",
+      "Integrity": "gVckTztorXWFLtCe2XFsjGaEjlf+pn+75/0y8L16FhQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/basic_t-shirt_and_pants.png",
+      "RelativePath": "Images/Products/basic_t-shirt_and_pants#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "dylsxrf7pg",
+      "Integrity": "2+TfebMwzomgZHRnW63HzTPnt8cDAFqjq4pv87S6yT0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/canon_at-1_retro_camera.glb",
+      "RelativePath": "Images/Products/canon_at-1_retro_camera#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wk6y26y3el",
+      "Integrity": "0E9Y8UxHokcUXIF4ic7yqvpc5fexVUCwQnXKy585grU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/canon_at-1_retro_camera.png",
+      "RelativePath": "Images/Products/canon_at-1_retro_camera#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ohnypscm2x",
+      "Integrity": "lGt4/E0eW778kEvDJ9NjGSE7oYahAJBEmDhQ3iZwkTY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\canon_at-1_retro_camera.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/chinese_style_tea_table.glb",
+      "RelativePath": "Images/Products/chinese_style_tea_table#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "kde7n1db31",
+      "Integrity": "eBAL5fq055aHjnn8R0/lV/zAJKoxYMitJDNwBMFOw+M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\chinese_style_tea_table.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/chinese_style_tea_table.png",
+      "RelativePath": "Images/Products/chinese_style_tea_table#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "luls2r4qni",
+      "Integrity": "navELTMb5IIP3o8y7I0Jc3UfzwSOmrmZ4YScmNZ6agI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\chinese_style_tea_table.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/headphones_free_model_by_oscar_creative.glb",
+      "RelativePath": "Images/Products/headphones_free_model_by_oscar_creative#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zva3lc1vzf",
+      "Integrity": "IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/headphones_free_model_by_oscar_creative.png",
+      "RelativePath": "Images/Products/headphones_free_model_by_oscar_creative#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bssn5ljuck",
+      "Integrity": "hcUpM9XfH76Q55W7H1bDhtxoW6i9pJ8wZJ6oPvD3EO0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/dining-table.jpg",
+      "RelativePath": "Images/Products/OLD/dining-table#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bga6gbgizz",
+      "Integrity": "lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\dining-table.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/laptop.jpg",
+      "RelativePath": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "tgskekqgo6",
+      "Integrity": "HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/OLD/laptop#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "spnv8n1qb2",
+      "Integrity": "0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\laptop.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/mens-tshirt.jpg",
+      "RelativePath": "Images/Products/OLD/mens-tshirt#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "5d3aamip0q",
+      "Integrity": "dw4Tdt3Uxdeokhg5TfD1OL9Y8WHIU+JUf3HDCKLwQ3Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/smartphone.jpg",
+      "RelativePath": "Images/Products/OLD/smartphone#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u1we7f827w",
+      "Integrity": "wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\smartphone.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/sofa-set.jpg",
+      "RelativePath": "Images/Products/OLD/sofa-set#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "0zlue76u55",
+      "Integrity": "vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\sofa-set.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/womens-necklace.jpg",
+      "RelativePath": "Images/Products/OLD/womens-necklace#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ukwiphftfu",
+      "Integrity": "bkLpDN6Kem94diRF5hBvc8Q7de6y7osXzZK3sI+DJ50=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/samsung_family_hub_fridge.glb",
+      "RelativePath": "Images/Products/samsung_family_hub_fridge#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "fs1fmif5fv",
+      "Integrity": "z0RiRMlAPs9g+XqiFKFTggUnUh6K6yKSdZhWPHAUpuY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/samsung_family_hub_fridge.png",
+      "RelativePath": "Images/Products/samsung_family_hub_fridge#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "hsr6fh65d3",
+      "Integrity": "McWU0MxnjNMCCD5BddpLnBhdMLoXDVLeDhpv9G8n/eU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\samsung_family_hub_fridge.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/samsung_galaxy_s22_ultra.glb",
+      "RelativePath": "Images/Products/samsung_galaxy_s22_ultra#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2tmjoqick0",
+      "Integrity": "yiUIKFtpbq+qtOWGQa175O6CO6H/+ef73VXS7FdA/yI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/samsung_galaxy_s22_ultra.png",
+      "RelativePath": "Images/Products/samsung_galaxy_s22_ultra#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6pu8v6wcrn",
+      "Integrity": "lltry/eJMcrGQBvt67OcVT5uwQBYzoZgS/8pJw4cqck=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/sci-fi_portal_gateway.glb",
+      "RelativePath": "Images/Products/sci-fi_portal_gateway#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "j23ze389d8",
+      "Integrity": "tYtaIh7DoBOmrq/mrVY356+ji9crVSDf2wJZDVjQo9k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb"
     },
     {
-      "Identity": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/sci-fi_portal_gateway.png",
+      "RelativePath": "Images/Products/sci-fi_portal_gateway#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bn68mwzol3",
+      "Integrity": "p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\sci-fi_portal_gateway.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Images/Products/air_jordan_1.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8094868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6sy5F1sIUKJQ2qCArcSPQbPOjx7cz91Xb3daqSbf/vU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:19:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6sy5F1sIUKJQ2qCArcSPQbPOjx7cz91Xb3daqSbf/vU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/air_jordan_1.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330839"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyPsW9XWtSmgYIhCHYDNNp0tFu6PwVYFHXCWyg+xTaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyPsW9XWtSmgYIhCHYDNNp0tFu6PwVYFHXCWyg+xTaE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/air_jordan_1.qwdun1hsd4.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8094868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6sy5F1sIUKJQ2qCArcSPQbPOjx7cz91Xb3daqSbf/vU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:19:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwdun1hsd4"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/air_jordan_1.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6sy5F1sIUKJQ2qCArcSPQbPOjx7cz91Xb3daqSbf/vU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/air_jordan_1.tds0dog7yc.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\air_jordan_1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "330839"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TyPsW9XWtSmgYIhCHYDNNp0tFu6PwVYFHXCWyg+xTaE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tds0dog7yc"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/air_jordan_1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TyPsW9XWtSmgYIhCHYDNNp0tFu6PwVYFHXCWyg+xTaE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/basic_t-shirt_and_pants.dylsxrf7pg.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2+TfebMwzomgZHRnW63HzTPnt8cDAFqjq4pv87S6yT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:36:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dylsxrf7pg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/basic_t-shirt_and_pants.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2+TfebMwzomgZHRnW63HzTPnt8cDAFqjq4pv87S6yT0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/basic_t-shirt_and_pants.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4788400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gVckTztorXWFLtCe2XFsjGaEjlf+pn+75/0y8L16FhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:21:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gVckTztorXWFLtCe2XFsjGaEjlf+pn+75/0y8L16FhQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/basic_t-shirt_and_pants.nujgknhmho.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4788400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gVckTztorXWFLtCe2XFsjGaEjlf+pn+75/0y8L16FhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:21:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nujgknhmho"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/basic_t-shirt_and_pants.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gVckTztorXWFLtCe2XFsjGaEjlf+pn+75/0y8L16FhQ="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/basic_t-shirt_and_pants.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\basic_t-shirt_and_pants.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "201621"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2+TfebMwzomgZHRnW63HzTPnt8cDAFqjq4pv87S6yT0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:36:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2+TfebMwzomgZHRnW63HzTPnt8cDAFqjq4pv87S6yT0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/canon_at-1_retro_camera.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3119684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0E9Y8UxHokcUXIF4ic7yqvpc5fexVUCwQnXKy585grU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0E9Y8UxHokcUXIF4ic7yqvpc5fexVUCwQnXKy585grU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/canon_at-1_retro_camera.ohnypscm2x.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lGt4/E0eW778kEvDJ9NjGSE7oYahAJBEmDhQ3iZwkTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:31:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ohnypscm2x"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/canon_at-1_retro_camera.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lGt4/E0eW778kEvDJ9NjGSE7oYahAJBEmDhQ3iZwkTY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/canon_at-1_retro_camera.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65592"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lGt4/E0eW778kEvDJ9NjGSE7oYahAJBEmDhQ3iZwkTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:31:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lGt4/E0eW778kEvDJ9NjGSE7oYahAJBEmDhQ3iZwkTY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/canon_at-1_retro_camera.wk6y26y3el.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\canon_at-1_retro_camera.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3119684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0E9Y8UxHokcUXIF4ic7yqvpc5fexVUCwQnXKy585grU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:15:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk6y26y3el"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/canon_at-1_retro_camera.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0E9Y8UxHokcUXIF4ic7yqvpc5fexVUCwQnXKy585grU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/chinese_style_tea_table.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6805604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBAL5fq055aHjnn8R0/lV/zAJKoxYMitJDNwBMFOw+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBAL5fq055aHjnn8R0/lV/zAJKoxYMitJDNwBMFOw+M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/chinese_style_tea_table.kde7n1db31.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6805604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eBAL5fq055aHjnn8R0/lV/zAJKoxYMitJDNwBMFOw+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:24:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kde7n1db31"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/chinese_style_tea_table.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eBAL5fq055aHjnn8R0/lV/zAJKoxYMitJDNwBMFOw+M="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/chinese_style_tea_table.luls2r4qni.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "521216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"navELTMb5IIP3o8y7I0Jc3UfzwSOmrmZ4YScmNZ6agI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "luls2r4qni"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/chinese_style_tea_table.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-navELTMb5IIP3o8y7I0Jc3UfzwSOmrmZ4YScmNZ6agI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/chinese_style_tea_table.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\chinese_style_tea_table.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "521216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"navELTMb5IIP3o8y7I0Jc3UfzwSOmrmZ4YScmNZ6agI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-navELTMb5IIP3o8y7I0Jc3UfzwSOmrmZ4YScmNZ6agI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/headphones_free_model_by_oscar_creative.bssn5ljuck.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hcUpM9XfH76Q55W7H1bDhtxoW6i9pJ8wZJ6oPvD3EO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:35:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bssn5ljuck"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/headphones_free_model_by_oscar_creative.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hcUpM9XfH76Q55W7H1bDhtxoW6i9pJ8wZJ6oPvD3EO0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/headphones_free_model_by_oscar_creative.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7482424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/headphones_free_model_by_oscar_creative.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "70889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hcUpM9XfH76Q55W7H1bDhtxoW6i9pJ8wZJ6oPvD3EO0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:35:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hcUpM9XfH76Q55W7H1bDhtxoW6i9pJ8wZJ6oPvD3EO0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/headphones_free_model_by_oscar_creative.zva3lc1vzf.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7482424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zva3lc1vzf"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/headphones_free_model_by_oscar_creative.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/dining-table.bga6gbgizz.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bga6gbgizz"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/dining-table.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/dining-table.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4778200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.tgskekqgo6.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4778200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tgskekqgo6"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/laptop.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/laptop.spnv8n1qb2.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "spnv8n1qb2"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/laptop.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/mens-tshirt.5d3aamip0q.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dw4Tdt3Uxdeokhg5TfD1OL9Y8WHIU+JUf3HDCKLwQ3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5d3aamip0q"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/mens-tshirt.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dw4Tdt3Uxdeokhg5TfD1OL9Y8WHIU+JUf3HDCKLwQ3Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/mens-tshirt.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dw4Tdt3Uxdeokhg5TfD1OL9Y8WHIU+JUf3HDCKLwQ3Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dw4Tdt3Uxdeokhg5TfD1OL9Y8WHIU+JUf3HDCKLwQ3Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/smartphone.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/smartphone.u1we7f827w.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u1we7f827w"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/smartphone.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/sofa-set.0zlue76u55.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0zlue76u55"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/sofa-set.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/sofa-set.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/womens-necklace.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bkLpDN6Kem94diRF5hBvc8Q7de6y7osXzZK3sI+DJ50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkLpDN6Kem94diRF5hBvc8Q7de6y7osXzZK3sI+DJ50="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/womens-necklace.ukwiphftfu.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11595"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bkLpDN6Kem94diRF5hBvc8Q7de6y7osXzZK3sI+DJ50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ukwiphftfu"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/womens-necklace.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkLpDN6Kem94diRF5hBvc8Q7de6y7osXzZK3sI+DJ50="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_family_hub_fridge.fs1fmif5fv.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9638128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z0RiRMlAPs9g+XqiFKFTggUnUh6K6yKSdZhWPHAUpuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fs1fmif5fv"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/samsung_family_hub_fridge.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z0RiRMlAPs9g+XqiFKFTggUnUh6K6yKSdZhWPHAUpuY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_family_hub_fridge.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9638128"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z0RiRMlAPs9g+XqiFKFTggUnUh6K6yKSdZhWPHAUpuY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z0RiRMlAPs9g+XqiFKFTggUnUh6K6yKSdZhWPHAUpuY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_family_hub_fridge.hsr6fh65d3.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "322539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McWU0MxnjNMCCD5BddpLnBhdMLoXDVLeDhpv9G8n/eU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hsr6fh65d3"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/samsung_family_hub_fridge.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-McWU0MxnjNMCCD5BddpLnBhdMLoXDVLeDhpv9G8n/eU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_family_hub_fridge.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_family_hub_fridge.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "322539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"McWU0MxnjNMCCD5BddpLnBhdMLoXDVLeDhpv9G8n/eU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-McWU0MxnjNMCCD5BddpLnBhdMLoXDVLeDhpv9G8n/eU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_galaxy_s22_ultra.2tmjoqick0.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2382216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiUIKFtpbq+qtOWGQa175O6CO6H/+ef73VXS7FdA/yI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:18:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2tmjoqick0"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/samsung_galaxy_s22_ultra.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiUIKFtpbq+qtOWGQa175O6CO6H/+ef73VXS7FdA/yI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_galaxy_s22_ultra.6pu8v6wcrn.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lltry/eJMcrGQBvt67OcVT5uwQBYzoZgS/8pJw4cqck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6pu8v6wcrn"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/samsung_galaxy_s22_ultra.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lltry/eJMcrGQBvt67OcVT5uwQBYzoZgS/8pJw4cqck="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_galaxy_s22_ultra.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2382216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiUIKFtpbq+qtOWGQa175O6CO6H/+ef73VXS7FdA/yI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:18:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiUIKFtpbq+qtOWGQa175O6CO6H/+ef73VXS7FdA/yI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/samsung_galaxy_s22_ultra.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\samsung_galaxy_s22_ultra.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lltry/eJMcrGQBvt67OcVT5uwQBYzoZgS/8pJw4cqck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:32:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lltry/eJMcrGQBvt67OcVT5uwQBYzoZgS/8pJw4cqck="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sci-fi_portal_gateway.bn68mwzol3.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:36:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bn68mwzol3"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/sci-fi_portal_gateway.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sci-fi_portal_gateway.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9387752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tYtaIh7DoBOmrq/mrVY356+ji9crVSDf2wJZDVjQo9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tYtaIh7DoBOmrq/mrVY356+ji9crVSDf2wJZDVjQo9k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sci-fi_portal_gateway.j23ze389d8.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9387752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tYtaIh7DoBOmrq/mrVY356+ji9crVSDf2wJZDVjQo9k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:30:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j23ze389d8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/sci-fi_portal_gateway.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tYtaIh7DoBOmrq/mrVY356+ji9crVSDf2wJZDVjQo9k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sci-fi_portal_gateway.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76454"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 19:36:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM="
+        }
+      ]
     }
   ]
 }

@@ -2,22 +2,6 @@
 
 namespace ECommerce.Core.Specifications
 {
-    public enum SortOptions
-    {
-        [EnumMember(Value = "Name")]
-        Name,
-        [EnumMember(Value = "NameDesc")]
-        NameDesc,
-        [EnumMember(Value = "Price")]
-        Price,
-        [EnumMember(Value = "PriceDesc")]
-        PriceDesc,
-        [EnumMember(Value = "Brand")]
-        Brand,
-        [EnumMember(Value = "Type")]
-        Type
-    }
-
     public class ProductSpecParams
     {
         public SortOptions? Sort { get; set; }
@@ -25,7 +9,7 @@ namespace ECommerce.Core.Specifications
         public int? FilterByBrand {  get; set; }
         public int? FilterByType {  get; set; }
 
-        private int size = 5;
+        private int size { get; set; } = 5;
         public int PageSize { 
             get => size; 
             set => size = value > 10 ? 10 : value;

@@ -1,8 +1,16 @@
 using ECommerce.Core;
+using ECommerce.Core.Models.Identity;
+using ECommerce.Core.RepoInterface;
 using ECommerce.Core.Repos;
+using ECommerce.Core.Services;
 using ECommerce.Helper;
 using ECommerce.Repo;
 using ECommerce.Repo.Data;
+using ECommerce.Repo.Identity;
+using ECommerce.Service;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using StackExchange.Redis;
@@ -37,9 +45,9 @@ namespace ECommerce
                 Console.WriteLine($"Failed to start ngrok process: {ex.Message}");
             }
             #endregion
-            
 
-            var builder = WebApplication.CreateBuilder(args);            
+            var builder = WebApplication.CreateBuilder(args);
+
             #region Config Services - Add services to the container.
             builder.Services.AddControllers();
             //builder.Services
@@ -84,11 +92,16 @@ namespace ECommerce
                 });
             });
 
-            //Connection
-            //NpgSql
+            #region Connection
             builder.Services.AddDbContext<StoreContext>(options =>
             {
                 options.UseNpgsql(builder.Configuration.GetConnectionString("SupaConnection"))
+                    .EnableDetailedErrors();
+            });
+
+            builder.Services.AddDbContext<UserContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"))
                     .EnableDetailedErrors();
             });
 
@@ -96,51 +109,80 @@ namespace ECommerce
             builder.Services.AddSingleton<IConnectionMultiplexer>(options =>
             {
                 var conn = builder.Configuration.GetConnectionString("RedisConnection");
+                if (string.IsNullOrEmpty(conn))
+                {
+                    throw new InvalidOperationException("Redis connection string is not configured.");
+                }
                 return ConnectionMultiplexer.Connect(conn);
             });
+            #endregion
 
             //Controller
-            builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>));
-            builder.Services.AddScoped<IUnitWork, UnitWork>();
-            //builder.Services.AddScoped<IToken, TokenService>();
-
-            //PicResolver && Identity
-            builder.Services.AddAutoMapper(typeof(MappingProfiles));
-            builder.Services.AddSingleton<ProductPicture>();
-
+            builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>))
+                            .AddScoped<IBasketRepo, BasketRepo>()
+                            .AddScoped<IUnitWork, UnitWork>()
+                            .AddScoped<IToken, TokenService>()
+                            .AddScoped<IOrder, OrderService>()
+                            .AddScoped<IPayment, PaymentService>()
+                            .AddSingleton<ICache,CacheService>()
+                            .AddSingleton<ProductPicture>()
+                            .AddSingleton<PictureGlb>()
+                            .AddAutoMapper(typeof(MappingProfiles));
             
+            //Identity
+            builder.Services.AddIdentity<AppUser, IdentityRole>()
+                            .AddEntityFrameworkStores<UserContext>()
+                            .AddDefaultTokenProviders();
+
+            builder.Services.AddAuthentication("Sanctum")
+                            .AddScheme<AuthenticationSchemeOptions, SanctumAuthenticationHandler>("Sanctum", null);
+
+            /*JWT
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                            .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateIssuer = true, // Ensure the token's issuer matches the configured issuer
+                        ValidIssuer = builder.Configuration["JWT:Issuer"],
+
+                        ValidateAudience = true, // Ensure the token's audience matches the configured audience
+                        ValidAudience = builder.Configuration["JWT:Audience"],
+
+                        ValidateLifetime = true, // Ensure the token is not expired
+                        ClockSkew = TimeSpan.FromDays(double.Parse(builder.Configuration["JWT:Duration"])),
+
+                        ValidateIssuerSigningKey = true, // Validate the signing key to ensure the token's integrity
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"])),
+
+                        // Additional options
+                        RequireExpirationTime = true
+                    };
+                }); // Manager / SignIn / Roles
+            */
+
             builder.Services.AddAuthorizationBuilder();
-
-            //builder.Services.AddAuthentication(options =>
-            //{
-            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            //})
-            //.AddJwtBearer(options =>
-            //{
-            //    options.TokenValidationParameters = new TokenValidationParameters
-            //    {
-            //        ValidateIssuer = true,
-            //        ValidIssuer = builder.Configuration["JWT:Issuer"],
-
-            //        ValidateAudience = true,
-            //        ValidAudience = builder.Configuration["JWT:Audience"],
-
-            //        ValidateLifetime = true,
-            //        ClockSkew = TimeSpan.Zero,
-
-            //        ValidateIssuerSigningKey = true,
-            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
-            //    };
-            //});
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("MyPolicy", a =>
+                {
+                    a.AllowAnyHeader();
+                    a.AllowAnyMethod();
+                    a.AllowAnyOrigin();
+                });
+            });
 
             #region ErrorHandling
             #endregion
 
             #endregion
-
-            var app = builder.Build();
             
+            var app = builder.Build();
+
             #region Update-Database && DataSeed
             var scope = app.Services.CreateScope();
             var Services = scope.ServiceProvider;
@@ -151,10 +193,10 @@ namespace ECommerce
                 await dbContext.Database.MigrateAsync();
                 await StoreContextSeed.SeedAsync(dbContext);
 
-                //var userManager = Services.GetRequiredService<UserManager<AppUser>>();
-                //var identityContext = Services.GetRequiredService<IdentityContext>();
-                //await identityContext.Database.MigrateAsync();
-                //await IdentityContextSeed.SeedUserAsync(userManager);
+                var userManager = Services.GetRequiredService<UserManager<AppUser>>();
+                var identityContext = Services.GetRequiredService<UserContext>();
+                await identityContext.Database.MigrateAsync();
+                await UserContextSeed.SeedUserAsync(userManager);
             }
             catch (Exception ex)
             {
@@ -171,24 +213,19 @@ namespace ECommerce
                 //app.UseMiddleware<ExceptionHandlerMiddleware>();
                 //app.UseHsts();
             }
-            app.UseHttpsRedirection();
             //app.UseStatusCodePagesWithReExecute("/errors/{0}");
+            app.UseHttpsRedirection();
             // PictureUrl
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-            );
+            app.UseCors("MyPolicy");
 
             // Identity
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
-
             #endregion
 
             app.Run();

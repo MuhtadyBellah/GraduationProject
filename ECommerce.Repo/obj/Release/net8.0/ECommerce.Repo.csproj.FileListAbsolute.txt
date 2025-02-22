@@ -15,3 +15,4 @@ C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Repo\obj\Release\net8.0\refint
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Repo\obj\Release\net8.0\ECommerce.Repo.pdb
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Repo\obj\Release\net8.0\ECommerce.Repo.genruntimeconfig.cache
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Repo\obj\Release\net8.0\ref\ECommerce.Repo.dll
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Repo\obj\Release\net8.0\ECommerce.Repo.sourcelink.json

@@ -9,8 +9,8 @@ namespace ECommerce.Core.RepoInterface
 {
     public interface IBasketRepo
     {
-        Task<CustomerBasket?> GetBaketAsync(string basketId);
-        Task<CustomerBasket?> UpdateBaketAsync(CustomerBasket basket);
+        Task<CustomerBasket?> GetBasketAsync(string basketId);
+        Task<CustomerBasket?> UpdateBasketAsync(CustomerBasket basket);
         Task<bool> DeleteBaketAsync(string basketId);
 
     }

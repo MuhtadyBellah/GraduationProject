@@ -10,10 +10,6 @@ namespace ECommerce.Repo.Data
         {
             try
             {
-                // Start a transaction to ensure atomic operations
-                using var transaction = await dbContext.Database.BeginTransactionAsync();
-
-                // Seed ProductBrands if empty
                 if (!await dbContext.ProductBrands.AnyAsync())
                 {
                     var brandData = await ReadFileAsync("../ECommerce.Repo/Data/DataSeed/brands.json");
@@ -27,8 +23,6 @@ namespace ECommerce.Repo.Data
                         }
                     }
                 }
-
-                // Seed ProductTypes if empty
                 if (!await dbContext.ProductTypes.AnyAsync())
                 {
                     var typeData = await ReadFileAsync("../ECommerce.Repo/Data/DataSeed/types.json");
@@ -42,8 +36,6 @@ namespace ECommerce.Repo.Data
                         }
                     }
                 }
-
-                // Seed Products if empty
                 if (!await dbContext.Products.AnyAsync())
                 {
                     var productData = await ReadFileAsync("../ECommerce.Repo/Data/DataSeed/products.json");
@@ -57,14 +49,23 @@ namespace ECommerce.Repo.Data
                         }
                     }
                 }
-
-                // Commit the transaction
-                await transaction.CommitAsync();
+                if (!await dbContext.Deliveries.AnyAsync())
+                {
+                    var deliveryData = await ReadFileAsync("../ECommerce.Repo/Data/DataSeed/delivery.json");
+                    if (deliveryData != null)
+                    {
+                        var deliveries = JsonSerializer.Deserialize<List<Product>>(deliveryData);
+                        if (deliveries != null && deliveries.Any())
+                        {
+                            await dbContext.Products.AddRangeAsync(deliveries);
+                            await dbContext.SaveChangesAsync();
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error during seeding: {ex.Message}");
-                // Optional: Log to a logging service or use another mechanism to track errors
             }
         }
 

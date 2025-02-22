@@ -10,3 +10,4 @@ C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Release\net8.0\EComme
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Release\net8.0\refint\ECommerce.Core.dll
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Release\net8.0\ECommerce.Core.pdb
 C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Release\net8.0\ref\ECommerce.Core.dll
+C:\Users\Muhtady\source\repos\ECommerce\ECommerce.Core\obj\Release\net8.0\ECommerce.Core.sourcelink.json

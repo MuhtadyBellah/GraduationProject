@@ -1,14 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\",
+  "WorkspaceRootPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muhtady\\source\\repos\\ecommerce\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{427AAF57-18C6-4829-8C38-E1D7C18AE9AA}|ECommerce.Repo\\ECommerce.Repo.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce.repo\\data\\config\\usersconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{427AAF57-18C6-4829-8C38-E1D7C18AE9AA}|ECommerce.Repo\\ECommerce.Repo.csproj|solutionrelative:ecommerce.repo\\data\\config\\usersconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AF94469-A9AB-45FD-AE03-1382A97F4E2E}|ECommerce.Core\\ECommerce.Core.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce.core\\models\\user\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AF94469-A9AB-45FD-AE03-1382A97F4E2E}|ECommerce.Core\\ECommerce.Core.csproj|solutionrelative:ecommerce.core\\models\\user\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|c:\\users\\muh12\\source\\repos\\ecommercelastest\\ecommerce\\ecommerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9C62BCB-1B5E-4046-92D9-A5DEEB57987E}|ECommerce\\ECommerce.csproj|solutionrelative:ecommerce\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,11 +52,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Program.cs",
               "RelativeDocumentMoniker": "ECommerce\\Program.cs",
-              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Program.cs",
-              "RelativeToolTip": "ECommerce\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA4wCcAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Program.cs*",
+              "RelativeToolTip": "ECommerce\\Program.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAtwD8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T19:58:45.071Z",
               "IsPinned": true,
@@ -36,17 +64,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "ECommerce\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\ProductController.cs",
               "RelativeToolTip": "ECommerce\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T22:13:00.7Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwD4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T21:39:37.596Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwDcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T23:50:41.01Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T17:20:23.579Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BasketsController.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\BasketsController.cs",
+              "RelativeDocumentMoniker": "ECommerce\\Controllers\\BasketsController.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\Controllers\\BasketsController.cs",
+              "RelativeToolTip": "ECommerce\\Controllers\\BasketsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T22:28:07.739Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -55,6 +135,44 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersConfig.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\Data\\Config\\UsersConfig.cs",
+              "RelativeDocumentMoniker": "ECommerce.Repo\\Data\\Config\\UsersConfig.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\Data\\Config\\UsersConfig.cs",
+              "RelativeToolTip": "ECommerce.Repo\\Data\\Config\\UsersConfig.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T22:03:53.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "users.cs",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\Models\\User\\users.cs",
+              "RelativeDocumentMoniker": "ECommerce.Core\\Models\\User\\users.cs",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\Models\\User\\users.cs",
+              "RelativeToolTip": "ECommerce.Core\\Models\\User\\users.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T22:00:58.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeDocumentMoniker": "ECommerce\\appsettings.json",
+              "ToolTip": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\appsettings.json",
+              "RelativeToolTip": "ECommerce\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-21T15:23:58.134Z"
             }
           ]
         }

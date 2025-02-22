@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj": {}
+    "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
+    "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj",
+        "projectUniqueName": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj",
         "projectName": "ECommerce.Core",
-        "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj",
-        "packagesPath": "C:\\Users\\Muhtady\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\obj\\",
+        "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj",
+        "packagesPath": "C:\\Users\\muh12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Muhtady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\muh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -48,6 +54,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.3.0, )"
             },
             "Supabase": {
               "target": "Package",
@@ -74,21 +84,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj": {
+    "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj",
+        "projectUniqueName": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj",
         "projectName": "ECommerce.Repo",
-        "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj",
-        "packagesPath": "C:\\Users\\Muhtady\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\obj\\",
+        "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj",
+        "packagesPath": "C:\\Users\\muh12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Muhtady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\muh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,14 +110,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
-                "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj"
+              "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
+                "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj"
               }
             }
           }
@@ -117,7 +132,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -178,21 +194,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj": {
+    "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj",
+        "projectUniqueName": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj",
         "projectName": "ECommerce.Service",
-        "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj",
-        "packagesPath": "C:\\Users\\Muhtady\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Service\\obj\\",
+        "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Service\\ECommerce.Service.csproj",
+        "packagesPath": "C:\\Users\\muh12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Muhtady\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\muh12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -200,17 +220,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
-                "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj"
+              "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj": {
+                "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Core\\ECommerce.Core.csproj"
               },
-              "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj": {
-                "projectPath": "C:\\Users\\Muhtady\\source\\repos\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj"
+              "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj": {
+                "projectPath": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce.Repo\\ECommerce.Repo.csproj"
               }
             }
           }
@@ -224,7 +245,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -251,7 +273,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

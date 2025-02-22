@@ -15,5 +15,8 @@ namespace ECommerce.Core.Models.Basket
 
         public string Id { get; set; }
         public List<BasketItem> Items { set; get; }
+        public string? PaymentIntentId { get; set; }
+        public string? ClientSecret { get; set; }
+        public int? DeliveryId { get; set; }
     }
 }

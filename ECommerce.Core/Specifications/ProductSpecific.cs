@@ -8,7 +8,7 @@ namespace ECommerce.Core.Specifications
             base(p=>
                 (!param.FilterByProduct.HasValue || p.Id == param.FilterByProduct)
                 &&
-                (string.IsNullOrEmpty(param.SearchByName) || p.Name.ToLower().Contains(param.SearchByName))
+                (string.IsNullOrEmpty(param.SearchByName) || p.Name.ToLower().StartsWith(param.SearchByName))
                 &&
                 (!param.FilterByBrand.HasValue || p.ProductBrandId == param.FilterByBrand)
                 && (!param.FilterByType.HasValue || p.ProductTypeId == param.FilterByType)

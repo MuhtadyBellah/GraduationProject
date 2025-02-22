@@ -17,7 +17,7 @@ namespace ECommerce.Repo
         public async Task<IEnumerable<T>> GetAllAsync(ISpecific<T> spec)
             => await Spec(spec).ToListAsync();
 
-        public async Task<T> GetByIdAsync(ISpecific<T> spec)
+        public async Task<T?> GetEntityAsync(ISpecific<T> spec)
             => await Spec(spec).FirstOrDefaultAsync();
 
         public async Task<int> GetCountAsync(ISpecific<T> spec) 
@@ -28,20 +28,12 @@ namespace ECommerce.Repo
         public async Task<IEnumerable<T>> GetAllAsync()
             => await _dbContext.Set<T>().ToListAsync();
 
-        public async Task<T> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(int id)
             => await _dbContext.Set<T>().FindAsync(id);
         #endregion
 
-        public async Task UpdateAsync(T updatedEntity)
-        {
-            _dbContext.Set<T>().Update(updatedEntity);
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task CreateAsync(T createdEntity)
-        {
-            await _dbContext.Set<T>().AddAsync(createdEntity);
-            await _dbContext.SaveChangesAsync();
-        }
+        public async Task AddAsync(T item) => await _dbContext.Set<T>().AddAsync(item);
+        public void Update(T item) => _dbContext.Set<T>().Update(item);
+        public void Delete(T item) => _dbContext.Set<T>().Remove(item);
     }
 }

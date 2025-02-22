@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ECommerce.Core;
 using ECommerce.Core.Models;
 using ECommerce.Core.Repos;
 using ECommerce.Core.Specifications;
@@ -11,28 +12,25 @@ namespace ECommerce.Controllers
 {
     public class ProductController : ApiBaseController
     {
-        private readonly IGenericRepo<Product> _context;
-        private readonly IGenericRepo<ProductType> _contextType;
-        private readonly IGenericRepo<ProductBrand> _contextBrand;
         private readonly IMapper _mapper;
+        private readonly IUnitWork _repos;
 
-        public ProductController(IGenericRepo<Product> context, IMapper mapper, IGenericRepo<ProductType> contextType, IGenericRepo<ProductBrand> contextBrand)
+        public ProductController(IGenericRepo<Product> context, IMapper mapper, IUnitWork repos)
         {
-            _context = context;
             _mapper = mapper;
-            _contextType = contextType;
-            _contextBrand = contextBrand;
+            _repos = repos;
         }
 
-        //[Authorize]
+        [CachedAttribute(300)]
+        [Authorize(AuthenticationSchemes = "Sanctum")]
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts([FromQuery] ProductSpecParams param)
         {
             var spec = new ProductSpecific(param);
-            var products = await _context.GetAllAsync(spec);
+            var products = await _repos.Repo<Product>().GetAllAsync(spec);
             var mapProducts = _mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(products);
             var CountSpec = new ProductFilterationCount(param);
-            var count = await _context.GetCountAsync(CountSpec);
+            var count = await _repos.Repo<Product>().GetCountAsync(CountSpec);
 
             return Ok(new Pagination<ProductDTO>(param.PageIndex, param.PageSize, mapProducts, count));
         }
@@ -51,14 +49,15 @@ namespace ECommerce.Controllers
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ProductDTO), 200)]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductById(int id)
+        public async Task<ActionResult<ProductDTO>> GetProductById(int id)
         {
             if (id <= 0) return BadRequest("Id is not valid.");
 
             var spec = new ProductSpecific(id);
-            var product = await _context.GetByIdAsync(spec);
+            var product = await _repos.Repo<Product>().GetEntityAsync(spec);
+            if (product is null) return NotFound();
+
             var MapProduct = _mapper.Map<Product, ProductDTO>(product);
-            if (MapProduct is null) return NotFound();
             return Ok(MapProduct);
         }
 
@@ -67,9 +66,10 @@ namespace ECommerce.Controllers
         public async Task<ActionResult> GetItemPictureById(int id)
         {
             var spec = new ProductSpecific(id);
-            var product = await _context.GetByIdAsync(spec);
+            var product = await _repos.Repo<Product>().GetEntityAsync(spec);
+            if (product is null) return NotFound();
+
             var MapProduct = _mapper.Map<Product, ProductDTO>(product);
-            if (MapProduct is null) return NotFound();
             return Redirect(MapProduct.PictureUrl);
         }
 
@@ -77,7 +77,9 @@ namespace ECommerce.Controllers
         public async Task<IActionResult> GetItemPictureGlb(int id)
         {
             var spec = new ProductSpecific(id);
-            var product = await _context.GetByIdAsync(spec);
+            var product = await _repos.Repo<Product>().GetEntityAsync(spec);
+            if (product is null) return NotFound(new { Message = "Product not found." });
+
             var MapProduct = _mapper.Map<Product, ProductDTO>(product);
             var fileUrl = MapProduct.UrlGlb;
             if (string.IsNullOrEmpty(fileUrl))
@@ -88,9 +90,11 @@ namespace ECommerce.Controllers
 
         /* Put & Post
         [HttpPut]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> PutProduct(ProductParams updated)
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> PutProduct(Product updated)
         {
-            var product = await _context.GetByIdAsync(updated.id);
+            if (updated is null) return BadRequest();
+            var spec = new ProductSpecific(updated.Id);
+            var product = await _repos.Repo<Product>().GetByIdAsync(spec);
             if (product is null)
                 return NotFound();
 
@@ -184,7 +188,7 @@ namespace ECommerce.Controllers
 
         [HttpGet("Categories")]
         public async Task<ActionResult<IEnumerable<ProductType>>> GetProductTypes()
-            => Ok(await _contextType.GetAllAsync());
+            => Ok(await _repos.Repo<ProductType>().GetAllAsync());
 
         /* PutType
         [HttpPut("{id}")]
@@ -245,7 +249,7 @@ namespace ECommerce.Controllers
 
         [HttpGet("Brands")]
         public async Task<ActionResult<IEnumerable<ProductBrand>>> GetProductBrands()
-            => Ok(await _contextBrand.GetAllAsync());
+            => Ok(await _repos.Repo<ProductBrand>().GetAllAsync());
 
         /* PutBrand
                 [HttpPut("Brands/{id}")]

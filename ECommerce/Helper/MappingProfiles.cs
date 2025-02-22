@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
-using ECommerce.Core.Models;
+using ECommerce.Core.Models.Basket;
 using ECommerce.DTO;
+using ECommerce.Core.Models;
+using ECommerce.Core.Models.Order;
 
 namespace ECommerce.Helper
 {
@@ -13,6 +15,25 @@ namespace ECommerce.Helper
                 .ForMember(d => d.ProductBrand, o => o.MapFrom(s => s.ProductBrand.Name))
                 .ForMember(d => d.PictureUrl, o => o.MapFrom<ProductPicture>())
                 .ForMember(d => d.UrlGlb, o => o.MapFrom<PictureGlb>());
+
+            CreateMap<Core.Models.Identity.Address, AddressDTO>().ReverseMap();
+
+            CreateMap<CustomerBasket, CustomerBasketDTO>().ReverseMap();
+            CreateMap<BasketItem, BasketItemDTO>().ReverseMap();
+
+            CreateMap<Core.Models.Order.Address, AddressDTO>().ReverseMap();
+
+            CreateMap<Order, OrderReturnedDTO>()
+                .ForMember(d => d.Delivery, o => o.MapFrom(s => s.Delivery.SName))
+                .ForMember(d => d.DeliveryPrice, o => o.MapFrom(s => s.Delivery.Cost));
+
+            CreateMap<OrderItem, OrderItemDTO>()
+                .ForMember(d => d.ProductId, o => o.MapFrom(s => s.Product.ProductId))
+                .ForMember(d => d.ProductName, o => o.MapFrom(s => s.Product.ProductName))
+                .ForMember(d => d.PictureUrl, o => o.MapFrom(s => s.Product.PictureUrl))
+                .ForMember(d => d.UrlGlb, o => o.MapFrom(s => s.Product.UrlGlb))
+                .ForMember(d => d.PictureUrl, o => o.MapFrom<OrderItemPicture>())
+                .ForMember(d => d.UrlGlb, o => o.MapFrom<OrderItemGlb>());
         }
     }
 }
