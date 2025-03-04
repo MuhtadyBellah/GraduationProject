@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Diagnostics.Eventing.Reader;
+using System.Runtime.Serialization;
 
 namespace ECommerce.Core.Specifications
 {
@@ -22,6 +23,9 @@ namespace ECommerce.Core.Specifications
             get => search;
             set => search = value?.ToLower();
         }
+
+        public bool? isFav { get; set; }
+        public bool? isLike { get; set; }
     }
 
 }

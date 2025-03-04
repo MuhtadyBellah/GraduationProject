@@ -1,20 +1,22 @@
 using ECommerce.Core;
-using ECommerce.Core.Models.Identity;
 using ECommerce.Core.RepoInterface;
 using ECommerce.Core.Repos;
 using ECommerce.Core.Services;
+using ECommerce.Errors;
 using ECommerce.Helper;
 using ECommerce.Repo;
 using ECommerce.Repo.Data;
-using ECommerce.Repo.Identity;
 using ECommerce.Service;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using StackExchange.Redis;
 using System.Diagnostics;
+using System.Text.Json.Serialization;
+using ECommerce.Controllers;
 
 namespace ECommerce
 {
@@ -49,14 +51,13 @@ namespace ECommerce
             var builder = WebApplication.CreateBuilder(args);
 
             #region Config Services - Add services to the container.
-            builder.Services.AddControllers();
-            //builder.Services
-            //    .AddControllers(options => options.SuppressAsyncSuffixInActionNames = false)
-            //    .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+            builder.Services
+                .AddControllers(options => options.SuppressAsyncSuffixInActionNames = false)
+                .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen(options=>
+            builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo()
                 {
@@ -65,13 +66,13 @@ namespace ECommerce
                 });
 
                 // Define the security scheme
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                options.AddSecurityDefinition("Sanctum", new OpenApiSecurityScheme()
                 {
                     In = ParameterLocation.Header,
-                    Description = "Enter 'Bearer' followed by a space and the JWT token.",
+                    Description = "Enter 'Bearer' followed by a space and the Sanctum token.",
                     Name = "Authorization",
                     Type = SecuritySchemeType.Http, // Correct Type for Bearer Token
-                    Scheme = "Bearer",             // Ensure this matches the Bearer scheme
+                    Scheme = "Bearer",             // Ensure this matches the Bearer scheme0
                     BearerFormat = "JWT"           // Optional, for display purposes
                 });
 
@@ -84,7 +85,7 @@ namespace ECommerce
                             Reference = new OpenApiReference
                             {
                                 Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
+                                Id = "Sanctum"
                             }
                         },
                         Array.Empty<string>()
@@ -99,11 +100,11 @@ namespace ECommerce
                     .EnableDetailedErrors();
             });
 
-            builder.Services.AddDbContext<UserContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"))
-                    .EnableDetailedErrors();
-            });
+            //builder.Services.AddDbContext<UserContext>(options =>
+            //{
+            //    options.UseNpgsql(builder.Configuration.GetConnectionString("EventConnection"))
+            //        .EnableDetailedErrors();
+            //});
 
             //Redis
             builder.Services.AddSingleton<IConnectionMultiplexer>(options =>
@@ -121,21 +122,43 @@ namespace ECommerce
             builder.Services.AddScoped(typeof(IGenericRepo<>), typeof(GenericRepo<>))
                             .AddScoped<IBasketRepo, BasketRepo>()
                             .AddScoped<IUnitWork, UnitWork>()
-                            .AddScoped<IToken, TokenService>()
-                            .AddScoped<IOrder, OrderService>()
-                            .AddScoped<IPayment, PaymentService>()
-                            .AddSingleton<ICache,CacheService>()
+                            //.AddScoped<IToken, TokenService>()
+                            //.AddScoped<IOrder, OrderService>()
+                            //.AddScoped<IPayment, PaymentService>()
+                            .AddSingleton<ICache, CacheService>()
                             .AddSingleton<ProductPicture>()
                             .AddSingleton<PictureGlb>()
                             .AddAutoMapper(typeof(MappingProfiles));
-            
+
+            //Validation
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.InvalidModelStateResponseFactory = context =>
+                {
+                    var errors = context.ModelState
+                        .Where(e => e.Value.Errors.Count > 0)
+                        .SelectMany(x => x.Value.Errors)
+                        .Select(x => x.ErrorMessage).ToArray();
+                    var result = new ValidationResponse()
+                    {
+                        Errors = errors
+                    };
+                    return new BadRequestObjectResult(result);
+                };
+            });
+
             //Identity
-            builder.Services.AddIdentity<AppUser, IdentityRole>()
-                            .AddEntityFrameworkStores<UserContext>()
-                            .AddDefaultTokenProviders();
+            //builder.Services.AddIdentity<AppUser, IdentityRole>()
+            //                .AddEntityFrameworkStores<UserContext>();
 
             builder.Services.AddAuthentication("Sanctum")
                             .AddScheme<AuthenticationSchemeOptions, SanctumAuthenticationHandler>("Sanctum", null);
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Sanctum", policy =>
+                    policy.RequireAuthenticatedUser());
+            });
 
             /*JWT
             builder.Services.AddAuthentication(options =>
@@ -175,10 +198,6 @@ namespace ECommerce
                     a.AllowAnyOrigin();
                 });
             });
-
-            #region ErrorHandling
-            #endregion
-
             #endregion
             
             var app = builder.Build();
@@ -193,10 +212,10 @@ namespace ECommerce
                 await dbContext.Database.MigrateAsync();
                 await StoreContextSeed.SeedAsync(dbContext);
 
-                var userManager = Services.GetRequiredService<UserManager<AppUser>>();
-                var identityContext = Services.GetRequiredService<UserContext>();
-                await identityContext.Database.MigrateAsync();
-                await UserContextSeed.SeedUserAsync(userManager);
+                //var userManager = Services.GetRequiredService<UserManager<AppUser>>();
+                //var identityContext = Services.GetRequiredService<UserContext>();
+                //await identityContext.Database.MigrateAsync();
+                //await UserContextSeed.SeedUserAsync(userManager);
             }
             catch (Exception ex)
             {
@@ -208,13 +227,15 @@ namespace ECommerce
             #region Config - Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                app.UseMiddleware<ExceptionMiddleWare>();
                 app.UseSwagger();
                 app.UseSwaggerUI();
-                //app.UseMiddleware<ExceptionHandlerMiddleware>();
                 //app.UseHsts();
             }
-            //app.UseStatusCodePagesWithReExecute("/errors/{0}");
+            app.UseStatusCodePagesWithReExecute("/errors/{0}");
+;
             app.UseHttpsRedirection();
+            
             // PictureUrl
             app.UseStaticFiles();
 

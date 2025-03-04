@@ -22,6 +22,181 @@ namespace ECommerce.Repo.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("ECommerce.Core.Models.Favorites", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("isFavorite")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("isLike")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Favorites");
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Laravel.Orders", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("address");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("email");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("text")
+                        .HasColumnName("note");
+
+                    b.Property<DateTime?>("PaidAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("paid_at");
+
+                    b.Property<string>("PaymentMethod")
+                        .HasColumnType("text")
+                        .HasColumnName("payment_method");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("phone");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("status");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("numeric")
+                        .HasColumnName("total");
+
+                    b.Property<string>("TransactionId")
+                        .HasColumnType("text")
+                        .HasColumnName("transaction_id");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_at");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer")
+                        .HasColumnName("user_id");
+
+                    b.Property<int>("deliveryId")
+                        .HasColumnType("integer")
+                        .HasColumnName("deliveryId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("deliveryId");
+
+                    b.ToTable("orders", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Laravel.Users", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("email");
+
+                    b.Property<DateTime?>("EmailVerifiedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("email_verified_at");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("text")
+                        .HasColumnName("gender");
+
+                    b.Property<string>("GoogleId")
+                        .HasColumnType("text")
+                        .HasColumnName("google_id");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("text")
+                        .HasColumnName("image");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("password");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("text")
+                        .HasColumnName("phone");
+
+                    b.Property<string>("RememberToken")
+                        .HasColumnType("text")
+                        .HasColumnName("remember_token");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_at");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("users", null, t =>
+                        {
+                            t.ExcludeFromMigrations();
+                        });
+                });
+
             modelBuilder.Entity("ECommerce.Core.Models.Order.Delivery", b =>
                 {
                     b.Property<int>("Id")
@@ -33,7 +208,7 @@ namespace ECommerce.Repo.Data.Migrations
                     b.Property<decimal>("Cost")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("DTime")
+                    b.Property<string>("DeliveryTime")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -44,50 +219,18 @@ namespace ECommerce.Repo.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Deliveries");
-                });
-
-            modelBuilder.Entity("ECommerce.Core.Models.Order.Order", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("BuyerEmail")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("DeliveryId")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTimeOffset>("OrderDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("PaymentIntentId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("Status")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasColumnType("text")
                         .HasDefaultValue("Pending");
 
-                    b.Property<decimal>("SubTotal")
-                        .HasColumnType("decimal(18,2)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("DeliveryId");
-
-                    b.ToTable("orders");
+                    b.ToTable("Deliveries");
                 });
 
-            modelBuilder.Entity("ECommerce.Core.Models.Order.OrderItem", b =>
+            modelBuilder.Entity("ECommerce.Core.Models.Order.Invoice", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -95,20 +238,47 @@ namespace ECommerce.Repo.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("integer");
+                    b.Property<string>("BillingAddress")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<decimal>("Price")
+                    b.Property<DateTime?>("InvoiceDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("InvoiceNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("boolean");
+
+                    b.Property<DateTime?>("PaymentDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("TotalAmount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Quantity")
+                    b.Property<string>("TransactionId")
+                        .HasColumnType("text");
+
+                    b.Property<int>("orderId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("userId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("orderId")
+                        .IsUnique();
 
-                    b.ToTable("orderItems");
+                    b.HasIndex("userId");
+
+                    b.ToTable("Invoices");
                 });
 
             modelBuilder.Entity("ECommerce.Core.Models.Product", b =>
@@ -196,88 +366,61 @@ namespace ECommerce.Repo.Data.Migrations
                     b.ToTable("ProductTypes");
                 });
 
-            modelBuilder.Entity("ECommerce.Core.Models.Order.Order", b =>
+            modelBuilder.Entity("ECommerce.Core.Models.Favorites", b =>
                 {
-                    b.HasOne("ECommerce.Core.Models.Order.Delivery", "Delivery")
+                    b.HasOne("ECommerce.Core.Models.Product", "Product")
+                        .WithMany("Favorites")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ECommerce.Core.Models.Laravel.Users", "User")
                         .WithMany()
-                        .HasForeignKey("DeliveryId")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Laravel.Orders", b =>
+                {
+                    b.HasOne("ECommerce.Core.Models.Laravel.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ECommerce.Core.Models.Order.Delivery", "Delivery")
+                        .WithMany("Orders")
+                        .HasForeignKey("deliveryId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
-                    b.OwnsOne("ECommerce.Core.Models.Order.Address", "ShippingAddress", b1 =>
-                        {
-                            b1.Property<int>("OrderId")
-                                .HasColumnType("integer");
-
-                            b1.Property<string>("City")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("Country")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("FirstName")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("LastName")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("Street")
-                                .HasColumnType("text");
-
-                            b1.HasKey("OrderId");
-
-                            b1.ToTable("orders");
-
-                            b1.WithOwner()
-                                .HasForeignKey("OrderId");
-                        });
-
                     b.Navigation("Delivery");
 
-                    b.Navigation("ShippingAddress")
-                        .IsRequired();
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ECommerce.Core.Models.Order.OrderItem", b =>
+            modelBuilder.Entity("ECommerce.Core.Models.Order.Invoice", b =>
                 {
-                    b.HasOne("ECommerce.Core.Models.Order.Order", null)
-                        .WithMany("Items")
-                        .HasForeignKey("OrderId");
-
-                    b.OwnsOne("ECommerce.Core.Models.Order.ProductOrdered", "Product", b1 =>
-                        {
-                            b1.Property<int>("OrderItemId")
-                                .HasColumnType("integer");
-
-                            b1.Property<string>("PictureUrl")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<int>("ProductId")
-                                .HasColumnType("integer");
-
-                            b1.Property<string>("ProductName")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("UrlGlb")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.HasKey("OrderItemId");
-
-                            b1.ToTable("orderItems");
-
-                            b1.WithOwner()
-                                .HasForeignKey("OrderItemId");
-                        });
-
-                    b.Navigation("Product")
+                    b.HasOne("ECommerce.Core.Models.Laravel.Orders", "Order")
+                        .WithOne("Invoice")
+                        .HasForeignKey("ECommerce.Core.Models.Order.Invoice", "orderId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("ECommerce.Core.Models.Laravel.Users", "User")
+                        .WithMany("Invoices")
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ECommerce.Core.Models.Product", b =>
@@ -299,9 +442,24 @@ namespace ECommerce.Repo.Data.Migrations
                     b.Navigation("ProductType");
                 });
 
-            modelBuilder.Entity("ECommerce.Core.Models.Order.Order", b =>
+            modelBuilder.Entity("ECommerce.Core.Models.Laravel.Orders", b =>
                 {
-                    b.Navigation("Items");
+                    b.Navigation("Invoice");
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Laravel.Users", b =>
+                {
+                    b.Navigation("Invoices");
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Order.Delivery", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("ECommerce.Core.Models.Product", b =>
+                {
+                    b.Navigation("Favorites");
                 });
 #pragma warning restore 612, 618
         }

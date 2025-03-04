@@ -2,7 +2,7 @@
 
 namespace ECommerce.DTO
 {
-    public class AddressDTO
+    public record AddressDTO
     {
         [Required]
         public int Id { get; set; }

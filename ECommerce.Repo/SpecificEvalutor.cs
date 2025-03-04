@@ -13,7 +13,7 @@ namespace ECommerce.Repo
 
             if(spec.Order is not null) query = query.OrderBy(spec.Order);
             if(spec.OrderDesc is not null) query = query.OrderByDescending(spec.OrderDesc);
-            if (spec.IsPagination) query = query.Skip(spec.Skip).Take(spec.Take);
+            if (spec.IsPagination) query = query.AsNoTracking().Skip(spec.Skip).Take(spec.Take);
 
             query = spec.Includes.Aggregate(query, (curr, inc) => curr.Include(inc));
             

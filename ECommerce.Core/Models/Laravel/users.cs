@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ECommerce.Core.Models.Order;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Core.Models.User
+namespace ECommerce.Core.Models.Laravel
 {
     [Table("users")]
     public class Users
@@ -47,5 +48,7 @@ namespace ECommerce.Core.Models.User
 
         [Column("updated_at")]
         public DateTime UpdatedAt { get; set; }
+
+        public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
     }
 }

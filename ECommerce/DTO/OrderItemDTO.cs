@@ -1,12 +1,12 @@
-﻿namespace ECommerce.DTO
-{
-    public class OrderItemDTO
-    {
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string PictureUrl { get; set; }
-        public string UrlGlb { get; set; }
-        public decimal Price { get; set; }
-        public int Quantity { get; set; }
-    }
-}
+﻿//namespace ECommerce.DTO
+//{
+//    public record OrderItemDTO
+//    {
+//        public int ProductId { get; set; }
+//        public string ProductName { get; set; }
+//        public string PictureUrl { get; set; }
+//        public string UrlGlb { get; set; }
+//        public decimal Price { get; set; }
+//        public int Quantity { get; set; }
+//    }
+//}

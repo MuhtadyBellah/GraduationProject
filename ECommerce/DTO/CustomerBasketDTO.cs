@@ -2,7 +2,7 @@
 
 namespace ECommerce.DTO
 {
-    public class CustomerBasketDTO
+    public record CustomerBasketDTO
     {
         [Required]
         public string Id { get; set; }

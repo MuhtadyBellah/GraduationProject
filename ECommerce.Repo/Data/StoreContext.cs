@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using ECommerce.Core.Models;
 using ECommerce.Core.Models.Order;
-using ECommerce.Core.Models.User;
+using ECommerce.Core.Models.Laravel;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ECommerce.Repo.Data
 {
@@ -14,25 +14,29 @@ namespace ECommerce.Repo.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
-        //public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        //{
-        //    foreach (var entry in ChangeTracker.Entries<Product>())
-        //    {
-        //        if (entry.State == EntityState.Added && string.IsNullOrEmpty(entry.Entity.PictureUrl))
-        //        {
-        //            entry.Entity.PictureUrl = $"https://dhqjcyiisuhpbzshaxnm.supabase.co/storage/v1/object/public/Images/Products/{entry.Entity.PictureUrl}";
-        //        }
-        //    }
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var entry in ChangeTracker.Entries<Product>())
+            {
+                if ((entry.State == EntityState.Added || entry.State == EntityState.Modified) && !string.IsNullOrEmpty(entry.Entity.PictureUrl) && !string.IsNullOrEmpty(entry.Entity.UrlGlb))
+                {
+                    entry.Entity.PictureUrl = $"Images/Products/{Path.GetFileName(entry.Entity.PictureUrl)}";
+                    entry.Entity.UrlGlb = $"Images/Products/{Path.GetFileName(entry.Entity.UrlGlb)}";
+                }
+            }
 
-        //    return await base.SaveChangesAsync(cancellationToken);
-        //}
+            return await base.SaveChangesAsync(cancellationToken);
+        }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductType> ProductTypes { get; set; }
         public DbSet<ProductBrand> ProductBrands { get; set; }
-        public DbSet<Order> orders { get; set; }
-        public DbSet<OrderItem> orderItems { get; set; }
+        //public DbSet<Order> orders { get; set; }
+        //public DbSet<OrderItem> orderItems { get; set; }
         public DbSet<Delivery> Deliveries { get; set; }
+        public DbSet<Favorites> Favorites { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
     }
 }

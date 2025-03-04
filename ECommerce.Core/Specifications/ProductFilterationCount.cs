@@ -11,8 +11,13 @@ namespace ECommerce.Core.Specifications
                 (string.IsNullOrEmpty(param.SearchByName) || p.Name.ToLower().Contains(param.SearchByName))
                 &&
                 (!param.FilterByBrand.HasValue || p.ProductBrandId == param.FilterByBrand)
-                && (!param.FilterByType.HasValue || p.ProductTypeId == param.FilterByType)
-                ) 
-        { }
+                && 
+                (!param.FilterByType.HasValue || p.ProductTypeId == param.FilterByType)
+                &&
+                (!param.isFav.HasValue || p.Favorites.Any(f => f.isFavorite == param.isFav))
+                &&
+                (!param.isLike.HasValue || p.Favorites.Any(f => f.isLike == param.isLike))
+            ) 
+        {}
     }
 }

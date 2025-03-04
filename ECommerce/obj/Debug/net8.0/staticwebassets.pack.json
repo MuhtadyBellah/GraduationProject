@@ -1,6 +1,86 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\BedroomsAR.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\BedroomsAR.png"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\DininngRoomAR.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\DininngRoomAR.png"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Freezer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\FridgeSilver.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\FridgeSilver.jpg"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\GardenAR.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\GardenAR.png"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\HomeOfficeAR.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\HomeOfficeAR.png"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SmartWitch.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\SmartWitch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SportBackPack.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\SportBackPack.jpg"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\سخان.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\New folder\\سخان.jpg"
+    },
+    {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
       "PackagePath": "staticwebassets\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb"
     },

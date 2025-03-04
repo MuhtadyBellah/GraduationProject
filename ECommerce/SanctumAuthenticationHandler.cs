@@ -51,7 +51,7 @@ namespace ECommerce
             using var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-            var response = await httpClient.GetAsync("https://concise-ant-sound.ngrok-free.app/api/user");
+            var response = await httpClient.GetAsync("https://concise-ant-sound.ngrok-free.app/api/profile");
 
             if (!response.IsSuccessStatusCode)
             {
@@ -59,14 +59,24 @@ namespace ECommerce
             }
 
             var jsonResponse = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<UserInfo>(jsonResponse);
+            var profileResponse = JsonSerializer.Deserialize<ProfileResponse>(jsonResponse, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+            return profileResponse?.User;
+        }
+
+        private class ProfileResponse
+        {
+            public required UserInfo User { get; set; }
         }
 
         private class UserInfo
         {
-            public required string Email { get; set; }
-            public required string Name { get; set; }
             public required int Id { get; set; }
+            public required string Name { get; set; }
+            public required string Email { get; set; }
         }
     }
 }

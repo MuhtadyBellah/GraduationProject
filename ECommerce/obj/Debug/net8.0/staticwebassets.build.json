@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ORcUXjOG0CgDsXaF5VTj6ZWW5TXXrP81XE4EtgFJFPM=",
+  "Hash": "eJmVdkUzwYTN8ROOIiEbSOA2DbVe6qtkq2YaT9CmfkU=",
   "Source": "ECommerce",
   "BasePath": "_content/ECommerce",
   "Mode": "Default",
@@ -225,6 +225,426 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Adidas_Green_Backpack_0302002709_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g1pvucnlwv",
+      "Integrity": "hM5oAhZ2bwJFQ28nvHXHPvLiVKFrDanOqSp2e7OFnkU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Bed_and_Side_Table_0301234901_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3uopgfdvt2",
+      "Integrity": "BXqx7Ig35dLlgzjgROlDCH0FUOnE9gg0KuoHIpTS4QY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Bed_and_Side_Table_0301235145_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mhi8ovdyxi",
+      "Integrity": "mlM4AnAIJldSO09JYgdQJTX/KJt+Nx1z5MjL5EhNG7s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\BedroomsAR.png",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/BedroomsAR#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hv8na9nnxe",
+      "Integrity": "UzXUuV8LTnGBdZASNXXlsqcM8PLrz62qAg3Rm+L0vlY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\BedroomsAR.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Dining_Room_Set_0301233426_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mz3uwk41rd",
+      "Integrity": "st83pLdqUqgAFTWZrgNFNkA8F3Wtvey2Wx9+FkTHztI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\DininngRoomAR.png",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/DininngRoomAR#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sbge6tujvd",
+      "Integrity": "KEReDGll0N42XzuSG0Kdw3Mo4gXVlTrd/Ik3RhgWvkE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\DininngRoomAR.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Freezer#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0mdo0mu7ei",
+      "Integrity": "GO3W3PRsgLqeNDz8mkHmCJnAzpo+Pv+TQphq5JS1mYo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Freezer.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Freezer_Appliance_0302010131_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mbpgleq8kb",
+      "Integrity": "zk57BadvBnCwg7ThjqVT1cMo2Vnr9Y/0DEzjMfXuDkw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\FridgeSilver.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/FridgeSilver#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bvts2evq8c",
+      "Integrity": "yc+1DmfpPn6lC8QS+MVMiVlItjSQxiITDTdek1cacXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\FridgeSilver.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\GardenAR.png",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/GardenAR#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ijiarfcr1",
+      "Integrity": "OLm4XtwaQD4VS9ELcDuILf01+llrMqVVME0sHlcniqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\GardenAR.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Hanging_Chair_with_Cu_0302001842_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u1qxcd92d6",
+      "Integrity": "IvL+nyXWeLM2fmbShQJ+M+NMBIhkZ5z6MJVyRBTDKPE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\HomeOfficeAR.png",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/HomeOfficeAR#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fyctfd5q2f",
+      "Integrity": "13kb1oOZ2acG7m2Ace5kVHojeYPUEJB4bzgxXYSJD/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\HomeOfficeAR.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Office_Desk_Decor_0301235809_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fxaeeqktz0",
+      "Integrity": "LduMe+lta9LPW1S2nWGZKx1EX5vI2TESrLbtgoc3kJg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Smartwatch_Display_0302003123_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n14y1jyxpw",
+      "Integrity": "BYrEWxVjyire8FMDpkDHY4DVpiYu8re0Cestaq2MUf8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Smartwatch_Display_0302003347_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "18gp66fqg8",
+      "Integrity": "n9PPtav1I9XSCddS6SHxAFgN7pa3YRhqtvYDXk/nDYY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SmartWitch.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/SmartWitch#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2er96pc6dl",
+      "Integrity": "FgMqx2Tk873133LBwKY6RXOB0omr+EHqMeLEENVLhls=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\SmartWitch.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SportBackPack.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/SportBackPack#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a82rz0hohb",
+      "Integrity": "Clf32UlTk7MsN/UyOkVRmr6V4cIiNcw3/rymNwQuICY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\SportBackPack.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Top_Freezer_Refrigera_0302004453_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d0zxvi5zkg",
+      "Integrity": "g7lrUr5N7EqUieseuvmGGM19KECoD+lnwdHk57aRb4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/Water_Heater_0302003937_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fnwb4d1uhb",
+      "Integrity": "9R1v4fzejWiFKfNmudGlOMG+wP39TNiA5ggs0LADOPo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\سخان.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/New folder/سخان#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6l6wim89h",
+      "Integrity": "SEcNDSFQ2e7xIUNhZejhAgtP+KZ3DKYzHnSHJt7PIJs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\سخان.jpg"
     },
     {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
@@ -1318,6 +1738,1646 @@
         {
           "Name": "integrity",
           "Value": "sha256-IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Adidas_Green_Backpack_0302002709_texture.g1pvucnlwv.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11766888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hM5oAhZ2bwJFQ28nvHXHPvLiVKFrDanOqSp2e7OFnkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1pvucnlwv"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Adidas_Green_Backpack_0302002709_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hM5oAhZ2bwJFQ28nvHXHPvLiVKFrDanOqSp2e7OFnkU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Adidas_Green_Backpack_0302002709_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11766888"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hM5oAhZ2bwJFQ28nvHXHPvLiVKFrDanOqSp2e7OFnkU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:27:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hM5oAhZ2bwJFQ28nvHXHPvLiVKFrDanOqSp2e7OFnkU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Bed_and_Side_Table_0301234901_texture.3uopgfdvt2.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11577368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXqx7Ig35dLlgzjgROlDCH0FUOnE9gg0KuoHIpTS4QY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3uopgfdvt2"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Bed_and_Side_Table_0301234901_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXqx7Ig35dLlgzjgROlDCH0FUOnE9gg0KuoHIpTS4QY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Bed_and_Side_Table_0301234901_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301234901_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11577368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BXqx7Ig35dLlgzjgROlDCH0FUOnE9gg0KuoHIpTS4QY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BXqx7Ig35dLlgzjgROlDCH0FUOnE9gg0KuoHIpTS4QY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Bed_and_Side_Table_0301235145_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9504948"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlM4AnAIJldSO09JYgdQJTX/KJt+Nx1z5MjL5EhNG7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:51:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlM4AnAIJldSO09JYgdQJTX/KJt+Nx1z5MjL5EhNG7s="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Bed_and_Side_Table_0301235145_texture.mhi8ovdyxi.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Bed_and_Side_Table_0301235145_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9504948"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mlM4AnAIJldSO09JYgdQJTX/KJt+Nx1z5MjL5EhNG7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:51:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mhi8ovdyxi"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Bed_and_Side_Table_0301235145_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mlM4AnAIJldSO09JYgdQJTX/KJt+Nx1z5MjL5EhNG7s="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/BedroomsAR.hv8na9nnxe.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\BedroomsAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41165"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UzXUuV8LTnGBdZASNXXlsqcM8PLrz62qAg3Rm+L0vlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hv8na9nnxe"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/BedroomsAR.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UzXUuV8LTnGBdZASNXXlsqcM8PLrz62qAg3Rm+L0vlY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/BedroomsAR.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\BedroomsAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41165"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UzXUuV8LTnGBdZASNXXlsqcM8PLrz62qAg3Rm+L0vlY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UzXUuV8LTnGBdZASNXXlsqcM8PLrz62qAg3Rm+L0vlY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Dining_Room_Set_0301233426_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7141684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st83pLdqUqgAFTWZrgNFNkA8F3Wtvey2Wx9+FkTHztI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-st83pLdqUqgAFTWZrgNFNkA8F3Wtvey2Wx9+FkTHztI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Dining_Room_Set_0301233426_texture.mz3uwk41rd.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Dining_Room_Set_0301233426_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7141684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"st83pLdqUqgAFTWZrgNFNkA8F3Wtvey2Wx9+FkTHztI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mz3uwk41rd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Dining_Room_Set_0301233426_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-st83pLdqUqgAFTWZrgNFNkA8F3Wtvey2Wx9+FkTHztI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/DininngRoomAR.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\DininngRoomAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KEReDGll0N42XzuSG0Kdw3Mo4gXVlTrd/Ik3RhgWvkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:29:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KEReDGll0N42XzuSG0Kdw3Mo4gXVlTrd/Ik3RhgWvkE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/DininngRoomAR.sbge6tujvd.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\DininngRoomAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51874"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KEReDGll0N42XzuSG0Kdw3Mo4gXVlTrd/Ik3RhgWvkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:29:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sbge6tujvd"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/DininngRoomAR.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KEReDGll0N42XzuSG0Kdw3Mo4gXVlTrd/Ik3RhgWvkE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Freezer.0mdo0mu7ei.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GO3W3PRsgLqeNDz8mkHmCJnAzpo+Pv+TQphq5JS1mYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0mdo0mu7ei"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Freezer.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GO3W3PRsgLqeNDz8mkHmCJnAzpo+Pv+TQphq5JS1mYo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Freezer.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GO3W3PRsgLqeNDz8mkHmCJnAzpo+Pv+TQphq5JS1mYo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GO3W3PRsgLqeNDz8mkHmCJnAzpo+Pv+TQphq5JS1mYo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Freezer_Appliance_0302010131_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6045280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zk57BadvBnCwg7ThjqVT1cMo2Vnr9Y/0DEzjMfXuDkw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 01:01:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zk57BadvBnCwg7ThjqVT1cMo2Vnr9Y/0DEzjMfXuDkw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Freezer_Appliance_0302010131_texture.mbpgleq8kb.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Freezer_Appliance_0302010131_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6045280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zk57BadvBnCwg7ThjqVT1cMo2Vnr9Y/0DEzjMfXuDkw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 01:01:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mbpgleq8kb"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Freezer_Appliance_0302010131_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zk57BadvBnCwg7ThjqVT1cMo2Vnr9Y/0DEzjMfXuDkw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/FridgeSilver.bvts2evq8c.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\FridgeSilver.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yc+1DmfpPn6lC8QS+MVMiVlItjSQxiITDTdek1cacXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:40:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bvts2evq8c"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/FridgeSilver.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yc+1DmfpPn6lC8QS+MVMiVlItjSQxiITDTdek1cacXI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/FridgeSilver.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\FridgeSilver.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yc+1DmfpPn6lC8QS+MVMiVlItjSQxiITDTdek1cacXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:40:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yc+1DmfpPn6lC8QS+MVMiVlItjSQxiITDTdek1cacXI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/GardenAR.0ijiarfcr1.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\GardenAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OLm4XtwaQD4VS9ELcDuILf01+llrMqVVME0sHlcniqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ijiarfcr1"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/GardenAR.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OLm4XtwaQD4VS9ELcDuILf01+llrMqVVME0sHlcniqw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/GardenAR.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\GardenAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OLm4XtwaQD4VS9ELcDuILf01+llrMqVVME0sHlcniqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OLm4XtwaQD4VS9ELcDuILf01+llrMqVVME0sHlcniqw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Hanging_Chair_with_Cu_0302001842_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14675868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvL+nyXWeLM2fmbShQJ+M+NMBIhkZ5z6MJVyRBTDKPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvL+nyXWeLM2fmbShQJ+M+NMBIhkZ5z6MJVyRBTDKPE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Hanging_Chair_with_Cu_0302001842_texture.u1qxcd92d6.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Hanging_Chair_with_Cu_0302001842_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14675868"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvL+nyXWeLM2fmbShQJ+M+NMBIhkZ5z6MJVyRBTDKPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:19:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u1qxcd92d6"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Hanging_Chair_with_Cu_0302001842_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvL+nyXWeLM2fmbShQJ+M+NMBIhkZ5z6MJVyRBTDKPE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/HomeOfficeAR.fyctfd5q2f.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\HomeOfficeAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"13kb1oOZ2acG7m2Ace5kVHojeYPUEJB4bzgxXYSJD/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fyctfd5q2f"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/HomeOfficeAR.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-13kb1oOZ2acG7m2Ace5kVHojeYPUEJB4bzgxXYSJD/0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/HomeOfficeAR.png",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\HomeOfficeAR.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"13kb1oOZ2acG7m2Ace5kVHojeYPUEJB4bzgxXYSJD/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-13kb1oOZ2acG7m2Ace5kVHojeYPUEJB4bzgxXYSJD/0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Office_Desk_Decor_0301235809_texture.fxaeeqktz0.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9601784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LduMe+lta9LPW1S2nWGZKx1EX5vI2TESrLbtgoc3kJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:58:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fxaeeqktz0"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Office_Desk_Decor_0301235809_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LduMe+lta9LPW1S2nWGZKx1EX5vI2TESrLbtgoc3kJg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Office_Desk_Decor_0301235809_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Office_Desk_Decor_0301235809_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9601784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LduMe+lta9LPW1S2nWGZKx1EX5vI2TESrLbtgoc3kJg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:58:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LduMe+lta9LPW1S2nWGZKx1EX5vI2TESrLbtgoc3kJg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Smartwatch_Display_0302003123_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15068928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BYrEWxVjyire8FMDpkDHY4DVpiYu8re0Cestaq2MUf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:31:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BYrEWxVjyire8FMDpkDHY4DVpiYu8re0Cestaq2MUf8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Smartwatch_Display_0302003123_texture.n14y1jyxpw.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003123_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15068928"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BYrEWxVjyire8FMDpkDHY4DVpiYu8re0Cestaq2MUf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:31:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n14y1jyxpw"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Smartwatch_Display_0302003123_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BYrEWxVjyire8FMDpkDHY4DVpiYu8re0Cestaq2MUf8="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Smartwatch_Display_0302003347_texture.18gp66fqg8.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15958960"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n9PPtav1I9XSCddS6SHxAFgN7pa3YRhqtvYDXk/nDYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "18gp66fqg8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Smartwatch_Display_0302003347_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n9PPtav1I9XSCddS6SHxAFgN7pa3YRhqtvYDXk/nDYY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Smartwatch_Display_0302003347_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Smartwatch_Display_0302003347_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15958960"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n9PPtav1I9XSCddS6SHxAFgN7pa3YRhqtvYDXk/nDYY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n9PPtav1I9XSCddS6SHxAFgN7pa3YRhqtvYDXk/nDYY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/SmartWitch.2er96pc6dl.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SmartWitch.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FgMqx2Tk873133LBwKY6RXOB0omr+EHqMeLEENVLhls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:39:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2er96pc6dl"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/SmartWitch.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FgMqx2Tk873133LBwKY6RXOB0omr+EHqMeLEENVLhls="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/SmartWitch.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SmartWitch.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16694"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FgMqx2Tk873133LBwKY6RXOB0omr+EHqMeLEENVLhls=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:39:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FgMqx2Tk873133LBwKY6RXOB0omr+EHqMeLEENVLhls="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/SportBackPack.a82rz0hohb.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SportBackPack.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Clf32UlTk7MsN/UyOkVRmr6V4cIiNcw3/rymNwQuICY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:37:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a82rz0hohb"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/SportBackPack.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Clf32UlTk7MsN/UyOkVRmr6V4cIiNcw3/rymNwQuICY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/SportBackPack.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\SportBackPack.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Clf32UlTk7MsN/UyOkVRmr6V4cIiNcw3/rymNwQuICY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:37:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Clf32UlTk7MsN/UyOkVRmr6V4cIiNcw3/rymNwQuICY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Top_Freezer_Refrigera_0302004453_texture.d0zxvi5zkg.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5125072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g7lrUr5N7EqUieseuvmGGM19KECoD+lnwdHk57aRb4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d0zxvi5zkg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Top_Freezer_Refrigera_0302004453_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g7lrUr5N7EqUieseuvmGGM19KECoD+lnwdHk57aRb4w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Top_Freezer_Refrigera_0302004453_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Top_Freezer_Refrigera_0302004453_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5125072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g7lrUr5N7EqUieseuvmGGM19KECoD+lnwdHk57aRb4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:44:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g7lrUr5N7EqUieseuvmGGM19KECoD+lnwdHk57aRb4w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Water_Heater_0302003937_texture.fnwb4d1uhb.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3909896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R1v4fzejWiFKfNmudGlOMG+wP39TNiA5ggs0LADOPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:39:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fnwb4d1uhb"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/Water_Heater_0302003937_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R1v4fzejWiFKfNmudGlOMG+wP39TNiA5ggs0LADOPo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/Water_Heater_0302003937_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Water_Heater_0302003937_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3909896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9R1v4fzejWiFKfNmudGlOMG+wP39TNiA5ggs0LADOPo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 00:39:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9R1v4fzejWiFKfNmudGlOMG+wP39TNiA5ggs0LADOPo="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/سخان.g6l6wim89h.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\سخان.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SEcNDSFQ2e7xIUNhZejhAgtP+KZ3DKYzHnSHJt7PIJs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:40:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6l6wim89h"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/New folder/سخان.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SEcNDSFQ2e7xIUNhZejhAgtP+KZ3DKYzHnSHJt7PIJs="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/New folder/سخان.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\سخان.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SEcNDSFQ2e7xIUNhZejhAgtP+KZ3DKYzHnSHJt7PIJs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 23:40:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SEcNDSFQ2e7xIUNhZejhAgtP+KZ3DKYzHnSHJt7PIJs="
         }
       ]
     },

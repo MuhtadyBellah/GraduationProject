@@ -1,6 +1,7 @@
 ﻿using ECommerce.Core.Models;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using ECommerce.Core.Models.Order;
 
 namespace ECommerce.Repo.Data
 {
@@ -54,10 +55,10 @@ namespace ECommerce.Repo.Data
                     var deliveryData = await ReadFileAsync("../ECommerce.Repo/Data/DataSeed/delivery.json");
                     if (deliveryData != null)
                     {
-                        var deliveries = JsonSerializer.Deserialize<List<Product>>(deliveryData);
+                        var deliveries = JsonSerializer.Deserialize<List<Delivery>>(deliveryData);
                         if (deliveries != null && deliveries.Any())
                         {
-                            await dbContext.Products.AddRangeAsync(deliveries);
+                            await dbContext.Deliveries.AddRangeAsync(deliveries);
                             await dbContext.SaveChangesAsync();
                         }
                     }

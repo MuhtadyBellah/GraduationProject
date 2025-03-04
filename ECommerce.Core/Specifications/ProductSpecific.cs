@@ -11,11 +11,17 @@ namespace ECommerce.Core.Specifications
                 (string.IsNullOrEmpty(param.SearchByName) || p.Name.ToLower().StartsWith(param.SearchByName))
                 &&
                 (!param.FilterByBrand.HasValue || p.ProductBrandId == param.FilterByBrand)
-                && (!param.FilterByType.HasValue || p.ProductTypeId == param.FilterByType)
-                )
+                && 
+                (!param.FilterByType.HasValue || p.ProductTypeId == param.FilterByType)
+                &&
+                (!param.isFav.HasValue || p.Favorites.Any(f => f.isFavorite == param.isFav))
+                &&
+                (!param.isLike.HasValue || p.Favorites.Any(f => f.isLike == param.isLike))
+            )
         {
             Includes.Add(p => p.ProductType);
             Includes.Add(p => p.ProductBrand);
+            Includes.Add(p => p.Favorites);
             switch (param.Sort)
             {
                 case SortOptions.Name:
@@ -53,11 +59,13 @@ namespace ECommerce.Core.Specifications
         {
             Includes.Add(p => p.ProductType);
             Includes.Add(p => p.ProductBrand);
+            Includes.Add(p => p.Favorites);
         }
         public ProductSpecific(List<int> ids) : base(p => ids.Contains(p.Id))
         {
             Includes.Add(p => p.ProductType);
             Includes.Add(p => p.ProductBrand);
+            Includes.Add(p => p.Favorites);
         }
     }
 }

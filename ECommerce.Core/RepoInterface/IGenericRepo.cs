@@ -7,7 +7,7 @@ namespace ECommerce.Core.Repos
     {
         public Task<IEnumerable<T>> GetAllAsync(ISpecific<T> spec);
         public Task<IEnumerable<T>> GetAllAsync();
-        public Task<T?> GetEntityAsync(ISpecific<T> spec);
+        public Task<T?> GetByIdAsync(ISpecific<T> spec);
         public Task<T?> GetByIdAsync(int id);
         public Task<int> GetCountAsync(ISpecific<T> spec);
 
