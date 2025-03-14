@@ -49,6 +49,7 @@ namespace ECommerce.Core.Models.Laravel
         [Column("updated_at")]
         public DateTime UpdatedAt { get; set; }
 
-        public ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
+        public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
+        
     }
 }

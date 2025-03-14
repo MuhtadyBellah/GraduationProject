@@ -9,6 +9,8 @@ namespace ECommerce.Core.Specifications
 {
     public enum SortOptions
     {
+        [EnumMember(Value = "IdDesc")]
+        IdDesc,
         [EnumMember(Value = "Name")]
         Name,
         [EnumMember(Value = "NameDesc")]

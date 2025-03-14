@@ -16,7 +16,7 @@ namespace ECommerce.Repo
         
         public async Task<IEnumerable<T>> GetAllAsync(ISpecific<T> spec)
             => await Spec(spec).ToListAsync();
-
+        
         public async Task<T?> GetByIdAsync(ISpecific<T> spec)
             => await Spec(spec).FirstOrDefaultAsync();
 

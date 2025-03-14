@@ -6,17 +6,26 @@ using ECommerce.Errors;
 using ECommerce.Helper;
 using ECommerce.Repo;
 using ECommerce.Repo.Data;
+using ECommerce.Repo.GraphQL;
+using ECommerce.Repo.GraphQL.Mutations;
+using ECommerce.Repo.GraphQL.Queries;
 using ECommerce.Service;
+using ECommerce.Service.ChatHub;
+using ECommerce.Service.Emails;
+using ECommerce.Service.SMS;
+using GraphiQl;
+using GraphQL;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using StackExchange.Redis;
+using Supabase;
 using System.Diagnostics;
 using System.Text.Json.Serialization;
-using ECommerce.Controllers;
+
 
 namespace ECommerce
 {
@@ -105,17 +114,6 @@ namespace ECommerce
             //    options.UseNpgsql(builder.Configuration.GetConnectionString("EventConnection"))
             //        .EnableDetailedErrors();
             //});
-
-            //Redis
-            builder.Services.AddSingleton<IConnectionMultiplexer>(options =>
-            {
-                var conn = builder.Configuration.GetConnectionString("RedisConnection");
-                if (string.IsNullOrEmpty(conn))
-                {
-                    throw new InvalidOperationException("Redis connection string is not configured.");
-                }
-                return ConnectionMultiplexer.Connect(conn);
-            });
             #endregion
 
             //Controller
@@ -125,9 +123,36 @@ namespace ECommerce
                             //.AddScoped<IToken, TokenService>()
                             //.AddScoped<IOrder, OrderService>()
                             //.AddScoped<IPayment, PaymentService>()
+                            .AddScoped<QLSchema>()
+                            .AddScoped<ProductQuery>()
+                            .AddScoped<ProductMutation>()
+
+                            //Redis Conn
+                            .AddSingleton<IConnectionMultiplexer>(options =>
+                            {
+                                var conn = builder.Configuration.GetConnectionString("RedisConnection");
+                                if (string.IsNullOrEmpty(conn))
+                                {
+                                    throw new InvalidOperationException("Redis connection string is not configured.");
+                                }
+                                return ConnectionMultiplexer.Connect(conn);
+                            })
                             .AddSingleton<ICache, CacheService>()
                             .AddSingleton<ProductPicture>()
                             .AddSingleton<PictureGlb>()
+                            .AddSingleton(provider =>
+                            {
+                                var supabaseUrl = builder.Configuration["SupaBaseClient:Url"];
+                                var supabaseKey = builder.Configuration["SupaBaseClient:Key"];
+                                if (string.IsNullOrEmpty(supabaseUrl) || string.IsNullOrEmpty(supabaseKey))
+                                {
+                                    throw new InvalidOperationException("Supabase configuration is missing in appsettings.json.");
+                                }
+                                return new Client(supabaseUrl, supabaseKey);
+                            })
+
+                            .AddTransient<IMailServices, MailServices>()
+                            //.AddTransient<ISMSServices, SMSServices>()
                             .AddAutoMapper(typeof(MappingProfiles));
 
             //Validation
@@ -145,11 +170,9 @@ namespace ECommerce
                     };
                     return new BadRequestObjectResult(result);
                 };
-            });
-
-            //Identity
-            //builder.Services.AddIdentity<AppUser, IdentityRole>()
-            //                .AddEntityFrameworkStores<UserContext>();
+            })
+                            .Configure<MailSettings>(builder.Configuration.GetSection("MaillSettings"))
+                            .Configure<TwilioSettings>(builder.Configuration.GetSection("TwilioSettings"));
 
             builder.Services.AddAuthentication("Sanctum")
                             .AddScheme<AuthenticationSchemeOptions, SanctumAuthenticationHandler>("Sanctum", null);
@@ -193,13 +216,25 @@ namespace ECommerce
             {
                 options.AddPolicy("MyPolicy", a =>
                 {
-                    a.AllowAnyHeader();
-                    a.AllowAnyMethod();
-                    a.AllowAnyOrigin();
+                    a.SetIsOriginAllowed(origin => true)
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials();
                 });
             });
+
+
+            //GraphQL
+            builder.Services.AddGraphQL(builder => builder
+                .AddSystemTextJson()
+            );
+
+            builder.Services.AddSignalR();
+            builder.Services.AddResponseCompression(opt=>
+                opt.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" })
+            );
             #endregion
-            
+
             var app = builder.Build();
 
             #region Update-Database && DataSeed
@@ -233,7 +268,11 @@ namespace ECommerce
                 //app.UseHsts();
             }
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
-;
+
+            //GraphQL
+            app.UseGraphQL<QLSchema>();
+            app.UseGraphiQl("/ui/graphql");
+
             app.UseHttpsRedirection();
             
             // PictureUrl
@@ -246,7 +285,21 @@ namespace ECommerce
             app.UseAuthentication();
             app.UseAuthorization();
 
+            //app.MapPost("/broadCast", async (string user, string msg, IHubContext<ChatHub, IChatClient> context) =>
+            //{
+            //    var userMessage = new UserMessage
+            //    {
+            //        User = user,
+            //        Message = msg,
+            //        DateSent = DateTime.Now
+            //    };
+
+            //    await context.Clients.All.ReceiveMessage(user, msg);
+            //    return Results.NoContent();
+            //});
+
             app.MapControllers();
+            app.MapHub<ChatHub>("/chatHub");
             #endregion
 
             app.Run();

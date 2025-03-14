@@ -1,8 +1,6 @@
 ﻿using ECommerce.Core;
 using ECommerce.Errors;
 using ECommerce.Repo.Data;
-using iTextSharp.text.pdf;
-using iTextSharp.text;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -14,6 +12,8 @@ using Microsoft.AspNetCore.Authorization;
 using AutoMapper;
 using ECommerce.Core.Models.Laravel;
 using ECommerce.Core.Specifications.OrderSpec;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 
 namespace ECommerce.Controllers
 {
@@ -179,30 +179,40 @@ namespace ECommerce.Controllers
 
             var mapped = _mapper.Map<IEnumerable<Invoice>, IEnumerable<InvoiceDTO>>(invoices);
             using var stream = new MemoryStream();
-            using (var document = new Document())
+            var document = new PdfDocument();
+            var page = document.AddPage();
+            var gfx = XGraphics.FromPdfPage(page);
+            var font = new XFont("Arial", 12);
+            var yPoint = 40;
+
+            gfx.DrawString($"Invoices for UserID: {userId}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+            yPoint += 20;
+
+            foreach (var invoice in mapped)
             {
-                PdfWriter.GetInstance(document, stream);
-                document.Open();
-
-                document.Add(new Paragraph($"Invoices for UserID: {userId}"));
-                document.Add(new Paragraph(" "));
-
-                foreach (var invoice in mapped)
-                {
-                    document.Add(new Paragraph($"Invoice Number: {invoice.InvoiceNumber}"));
-                    document.Add(new Paragraph($"Invoice Order: {invoice.Order}"));
-                    document.Add(new Paragraph($"Date: {invoice.InvoiceDate}"));
-                    document.Add(new Paragraph($"Total Amount: {invoice.TotalAmount}$"));
-                    document.Add(new Paragraph($"Paid: {(invoice.IsPaid ? "Paid" : "Not Paid Yet")}"));
-                    document.Add(new Paragraph($"Billing Address: {invoice.BillingAddress}"));
-                    document.Add(new Paragraph($"PaymentMethod: {invoice.PaymentMethod}"));
-                    document.Add(new Paragraph($"Payment Date: {invoice.PaymentDate}"));
-                    document.Add(new Paragraph($"Transaction ID: {invoice.TransactionId}"));
-                    document.Add(new Paragraph("---------------------------------"));
-                }
-
-                document.Close();
+                gfx.DrawString($"Invoice Number: {invoice.InvoiceNumber}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Invoice Order: {invoice.Order}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Date: {invoice.InvoiceDate}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Total Amount: {invoice.TotalAmount}$", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Paid: {(invoice.IsPaid ? "Paid" : "Not Paid Yet")}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Billing Address: {invoice.BillingAddress}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Payment Method: {invoice.PaymentMethod}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Payment Date: {invoice.PaymentDate}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+                gfx.DrawString($"Transaction ID: {invoice.TransactionId}", font, XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 40;
             }
+
+            document.Save(stream, false);
+
+
             return File(stream.ToArray(), "application/pdf", "Invoices.pdf");
         }
     }

@@ -4,6 +4,8 @@ using ECommerce.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ECommerce.Core.Models;
+using ECommerce.Errors;
+using NuGet.Protocol.Plugins;
 
 namespace ECommerce.Controllers
 {
@@ -22,62 +24,65 @@ namespace ECommerce.Controllers
         public async Task<ActionResult<IEnumerable<ProductType>>> GetProductTypes()
             => Ok(await _repos.Repo<ProductType>().GetAllAsync());
 
-        /* PutType
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProductType(int id, ProductType productType)
         {
-            if (id != productType.Id)
-            {
-                return BadRequest();
-            }
+            if (id != productType.Id || id <= 0) return BadRequest(new ApiResponse(400));
 
-            _context.Entry(productType).State = EntityState.Modified;
+            var exist = await _repos.Repo<ProductType>().GetByIdAsync(id);
+            if (exist is null) return BadRequest(new ApiResponse(400));
 
+            exist = productType;
             try
             {
-                await _context.SaveChangesAsync();
+                _repos.Repo<ProductType>().Update(exist);
+                await _repos.CompleteAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!ProductTypeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
             }
 
-            return NoContent();
+            return Ok(exist);
         }
-        */
-        /* PostType
+        
         [HttpPost]
         public async Task<ActionResult<ProductType>> PostProductType(ProductType productType)
         {
-            _context.ProductTypes.Add(productType);
-            await _context.SaveChangesAsync();
+            if (productType.Id <= 0) return BadRequest(new ApiResponse(400));
+            try
+            {
+                await _repos.Repo<ProductType>().AddAsync(productType);
+                await _repos.CompleteAsync();
+            }
+            catch (Exception ex)
+            {
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
+            }
 
-            return CreatedAtAction("GetProductType", new { id = productType.Id }, productType);
+            return Ok(productType);
         }
-        */
-        /* DeleteType
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductType(int id)
         {
-            var productType = await _context.ProductTypes.FindAsync(id);
-            if (productType == null)
+            var productType = await _repos.Repo<ProductType>().GetByIdAsync(id); ;
+            if (productType == null) return NotFound(new ApiResponse(404));
+
+            try
             {
-                return NotFound();
+                _repos.Repo<ProductType>().Delete(productType);
+                await _repos.CompleteAsync();
+            }
+            catch (Exception ex)
+            {
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
             }
 
-            _context.ProductTypes.Remove(productType);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return Ok(new ApiResponse(200, "Success"));
         }
-        */
-
     }
 }

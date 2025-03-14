@@ -5,10 +5,10 @@ namespace ECommerce.DTO
     public record CustomerBasketDTO
     {
         [Required]
-        public string Id { get; set; }
-        public List<BasketItemDTO> Items { get; set; } = new List<BasketItemDTO>();
-        public string? PaymentIntentId { get; set; }
-        public string? ClientSecret { get; set; }
-        public int? DeliveryId { get; set; }
+        public string Id;
+        public List<BasketItemDTO> Items;
+        public string? PaymentIntentId;
+        public string? ClientSecret;
+        public int? DeliveryId;
     }   
 }

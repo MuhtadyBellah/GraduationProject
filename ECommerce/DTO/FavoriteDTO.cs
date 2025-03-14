@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ECommerce.DTO
 {
-    public class FavoriteDTO
+    public record FavoriteDTO
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public string? User { get; set; }
-        public bool isFavorite { get; set; } = false;
-        public bool isLike { get; set; } = false;
-        public int ProductId { get; set; }
-        public string? Product { get; set; }
+        public int Id;
+        public int UserId;
+        public string? User;
+        public bool isFavorite;
+        public bool isLike;
+        public int ProductId;
+        public string? Product;
     }
 }

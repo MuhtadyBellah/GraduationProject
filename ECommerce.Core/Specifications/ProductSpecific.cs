@@ -24,6 +24,9 @@ namespace ECommerce.Core.Specifications
             Includes.Add(p => p.Favorites);
             switch (param.Sort)
             {
+                case SortOptions.IdDesc:
+                    OrderByDesc(p => p.Id);
+                    break;
                 case SortOptions.Name:
                     OrderBy(p => p.Name);
                     break;

@@ -4,6 +4,8 @@ using ECommerce.Core.Repos;
 using ECommerce.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ECommerce.Errors;
+using ECommerce.Repo.GraphQL.Types;
 
 namespace ECommerce.Controllers
 {
@@ -22,66 +24,66 @@ namespace ECommerce.Controllers
         public async Task<ActionResult<IEnumerable<ProductBrand>>> GetProductBrands()
             => Ok(await _repos.Repo<ProductBrand>().GetAllAsync());
 
-        /* PutBrand
         [HttpPut("Brands/{id}")]
         public async Task<IActionResult> PutProductBrand(int id, ProductBrand productBrand)
         {
-            if (id != productBrand.Id)
-            {
-                return BadRequest();
-            }
+            if (id != productBrand.Id || id <= 0) return BadRequest(new ApiResponse(400));
 
-            _context.Entry(productBrand).State = EntityState.Modified;
+            var exist = await _repos.Repo<ProductBrand>().GetByIdAsync(id);
+            if (exist is null) return BadRequest(new ApiResponse(400));
 
+            exist = productBrand;
             try
             {
-                await _context.SaveChangesAsync();
+                _repos.Repo<ProductBrand>().Update(exist);
+                await _repos.CompleteAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!ProductBrandExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
             }
 
-            return NoContent();
+            return Ok(exist);
         }
-        */
-        /* PostBrand
+
         [HttpPost]
         public async Task<ActionResult<ProductBrand>> PostProductBrand(ProductBrand productBrand)
         {
-            _context.ProductBrands.Add(productBrand);
-            await _context.SaveChangesAsync();
+            if (productBrand.Id <= 0) return BadRequest(new ApiResponse(400));
+            try
+            {
+                await _repos.Repo<ProductBrand>().AddAsync(productBrand);
+                await _repos.CompleteAsync();
+            }
+            catch (Exception ex)
+            {
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
+            }
 
-            return CreatedAtAction("GetProductBrand", new { id = productBrand.Id }, productBrand);
+            return Ok(productBrand);
         }
-        */
-        /* DeleteBrand
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductBrand(int id)
         {
-            var productBrand = await _context.ProductBrands.FindAsync(id);
-            if (productBrand == null)
+            var Brand = await _repos.Repo<ProductBrand>().GetByIdAsync(id); ;
+            if (Brand == null) return NotFound(new ApiResponse(404));
+
+            try
             {
-                return NotFound();
+                _repos.Repo<ProductBrand>().Delete(Brand);
+                await _repos.CompleteAsync();
+            }
+            catch (Exception ex)
+            {
+                await _repos.DisposeAsync();
+                return BadRequest(new ApiResponse(500, ex.Message));
             }
 
-            _context.ProductBrands.Remove(productBrand);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return Ok(new ApiResponse(200, "Success"));
         }
 
-        private bool ProductBrandExists(int id)
-        {
-            return _context.ProductBrands.Any(e => e.Id == id);
-        }
-        */
     }
 }

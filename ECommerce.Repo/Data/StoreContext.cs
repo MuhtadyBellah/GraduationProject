@@ -36,6 +36,7 @@ namespace ECommerce.Repo.Data
         public DbSet<Delivery> Deliveries { get; set; }
         public DbSet<Favorites> Favorites { get; set; }
         public DbSet<Users> Users { get; set; }
+        public DbSet<UserMessage> Messages { get; set; }
         public DbSet<Orders> Orders { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
     }

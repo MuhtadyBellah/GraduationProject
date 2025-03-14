@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb"
+    },
+    {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
       "PackagePath": "staticwebassets\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb"
     },
@@ -81,16 +85,16 @@
       "PackagePath": "staticwebassets\\Images\\Products\\New folder\\سخان.jpg"
     },
     {
-      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
-      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb"
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb"
     },
     {
-      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\dining-table.jpg"
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb"
     },
     {
-      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\laptop.jpg"
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb"
     },
     {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
@@ -99,10 +103,6 @@
     {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
       "PackagePath": "staticwebassets\\Images\\Products\\OLD\\smartphone.jpg"
-    },
-    {
-      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
-      "PackagePath": "staticwebassets\\Images\\Products\\OLD\\sofa-set.jpg"
     },
     {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
@@ -141,6 +141,10 @@
       "PackagePath": "staticwebassets\\Images\\Products\\chinese_style_tea_table.png"
     },
     {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\dining-table.jpg"
+    },
+    {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
       "PackagePath": "staticwebassets\\Images\\Products\\headphones_free_model_by_oscar_creative.glb"
     },
@@ -171,6 +175,14 @@
     {
       "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sci-fi_portal_gateway.png",
       "PackagePath": "staticwebassets\\Images\\Products\\sci-fi_portal_gateway.png"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.glb",
+      "PackagePath": "staticwebassets\\Images\\Products\\sofa-set.glb"
+    },
+    {
+      "Id": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\sofa-set.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ECommerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

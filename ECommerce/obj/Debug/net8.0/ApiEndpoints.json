@@ -98,6 +98,69 @@
     ]
   },
   {
+    "ContainingType": "ECommerce.Controllers.BrandsController",
+    "Method": "PostProductBrand",
+    "RelativePath": "api/Brands",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productBrand",
+        "Type": "ECommerce.Core.Models.ProductBrand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ECommerce.Core.Models.ProductBrand",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.BrandsController",
+    "Method": "DeleteProductBrand",
+    "RelativePath": "api/Brands/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.BrandsController",
+    "Method": "PutProductBrand",
+    "RelativePath": "api/Brands/Brands/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productBrand",
+        "Type": "ECommerce.Core.Models.ProductBrand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ECommerce.Controllers.CategoriesController",
     "Method": "GetProductTypes",
     "RelativePath": "api/Categories",
@@ -116,6 +179,69 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.CategoriesController",
+    "Method": "PostProductType",
+    "RelativePath": "api/Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productType",
+        "Type": "ECommerce.Core.Models.ProductType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ECommerce.Core.Models.ProductType",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.CategoriesController",
+    "Method": "PutProductType",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "productType",
+        "Type": "ECommerce.Core.Models.ProductType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ECommerce.Controllers.CategoriesController",
+    "Method": "DeleteProductType",
+    "RelativePath": "api/Categories/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ECommerce.Controllers.DeliveriesController",
@@ -818,6 +944,22 @@
     ]
   },
   {
+    "ContainingType": "ECommerce.Controllers.MailController",
+    "Method": "SendEmail",
+    "RelativePath": "api/Mail/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mailRequest",
+        "Type": "ECommerce.DTO.MailRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ECommerce.Controllers.ProductController",
     "Method": "GetProducts",
     "RelativePath": "api/Product",
@@ -893,8 +1035,8 @@
     "Parameters": [
       {
         "Name": "updated",
-        "Type": "ECommerce.DTO.ProductDTO",
-        "IsRequired": true
+        "Type": "ECommerce.Controllers.ProductController\u002BRequestProductDTO",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -946,8 +1088,8 @@
     "Parameters": [
       {
         "Name": "created",
-        "Type": "ECommerce.DTO.ProductDTO",
-        "IsRequired": true
+        "Type": "ECommerce.Controllers.ProductController\u002BRequestProductDTO",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -1055,6 +1197,15 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 404
+      },
+      {
+        "Type": "ECommerce.Errors.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 500
       }
     ]
@@ -1145,6 +1296,33 @@
           "application/json",
           "text/json"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ECommerce.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_10",
+    "RelativePath": "broadCast",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "msg",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

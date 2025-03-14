@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eJmVdkUzwYTN8ROOIiEbSOA2DbVe6qtkq2YaT9CmfkU=",
+  "Hash": "F+JqO0u3DCCkltw4UgalHnYdXfA5MyZPOQ5tnPko/io=",
   "Source": "ECommerce",
   "BasePath": "_content/ECommerce",
   "Mode": "Default",
@@ -185,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\chinese_style_tea_table.png"
     },
     {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/dining-table#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bga6gbgizz",
+      "Integrity": "lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\dining-table.jpg"
+    },
+    {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
@@ -225,6 +246,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/Modern_Dining_Room_Ta_0307031524_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jziczu2z77",
+      "Integrity": "Hwb9C2y+tpB+jXDdJq7rNrN+Hbd+4ke5s/yJq2q3P3E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb"
     },
     {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\New folder\\Adidas_Green_Backpack_0302002709_texture.glb",
@@ -647,12 +689,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\New folder\\سخان.jpg"
     },
     {
-      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/dining-table#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Products/OLD/Elegant_Pearls_Displa_0307030609_texture#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -661,19 +703,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bga6gbgizz",
-      "Integrity": "lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=",
+      "Fingerprint": "ij43n93o4p",
+      "Integrity": "vqS6q81zVnME09PbvD8V1ivvWb+/4dvAFILlxrtlWZw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\dining-table.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb"
     },
     {
-      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
       "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture#[.{fingerprint}]?.glb",
+      "RelativePath": "Images/Products/OLD/Man_in_Navy_T_Shirt_0307031631_texture#[.{fingerprint}]?.glb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -682,32 +724,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tgskekqgo6",
-      "Integrity": "HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=",
+      "Fingerprint": "dne18p38d2",
+      "Integrity": "aTx8C7YuM2w61gU5YhzQzDLU64sL7hSzJ1EuhLz3+ZY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb"
-    },
-    {
-      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
-      "SourceId": "ECommerce",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
-      "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/laptop#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "spnv8n1qb2",
-      "Integrity": "0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\laptop.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb"
     },
     {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg",
@@ -731,6 +752,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\mens-tshirt.jpg"
     },
     {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/OLD/Realme_Smartphone_Des_0307030955_texture#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tsducqvfbh",
+      "Integrity": "o3rqq8mWeMiTjkMeiO1a13uGfOVCmC3H+k/qhv/hKcE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb"
+    },
+    {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
       "SourceId": "ECommerce",
       "SourceType": "Discovered",
@@ -750,27 +792,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\smartphone.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
-      "SourceId": "ECommerce",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
-      "BasePath": "_content/ECommerce",
-      "RelativePath": "Images/Products/OLD/sofa-set#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "0zlue76u55",
-      "Integrity": "vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\OLD\\sofa-set.jpg"
     },
     {
       "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\womens-necklace.jpg",
@@ -918,6 +939,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\sci-fi_portal_gateway.png"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.glb",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/sofa-set#[.{fingerprint}]?.glb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tgskekqgo6",
+      "Integrity": "HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\sofa-set.glb"
+    },
+    {
+      "Identity": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
+      "SourceId": "ECommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\",
+      "BasePath": "_content/ECommerce",
+      "RelativePath": "Images/Products/sofa-set#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0zlue76u55",
+      "Integrity": "vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\sofa-set.jpg"
     }
   ],
   "Endpoints": [
@@ -1578,6 +1641,88 @@
       ]
     },
     {
+      "Route": "Images/Products/dining-table.bga6gbgizz.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bga6gbgizz"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/dining-table.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/dining-table.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\dining-table.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
+        }
+      ]
+    },
+    {
       "Route": "Images/Products/headphones_free_model_by_oscar_creative.bssn5ljuck.png",
       "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\headphones_free_model_by_oscar_creative.png",
       "Selectors": [],
@@ -1738,6 +1883,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-IfFL9ySrHtLGNtEkrxqlNiisD7vUvXs4j/rnHal5bCU="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/Modern_Dining_Room_Ta_0307031524_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5175424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hwb9C2y+tpB+jXDdJq7rNrN+Hbd+4ke5s/yJq2q3P3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:15:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hwb9C2y+tpB+jXDdJq7rNrN+Hbd+4ke5s/yJq2q3P3E="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/Modern_Dining_Room_Ta_0307031524_texture.jziczu2z77.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\Modern_Dining_Room_Ta_0307031524_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5175424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hwb9C2y+tpB+jXDdJq7rNrN+Hbd+4ke5s/yJq2q3P3E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:15:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jziczu2z77"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/Modern_Dining_Room_Ta_0307031524_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hwb9C2y+tpB+jXDdJq7rNrN+Hbd+4ke5s/yJq2q3P3E="
         }
       ]
     },
@@ -3382,8 +3609,8 @@
       ]
     },
     {
-      "Route": "Images/Products/OLD/dining-table.bga6gbgizz.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
+      "Route": "Images/Products/OLD/Elegant_Pearls_Displa_0307030609_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3392,89 +3619,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14109"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bga6gbgizz"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Products/OLD/dining-table.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Products/OLD/dining-table.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\dining-table.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14109"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lenbReY7YPClVwKaZdxyWm3oBrL8nAT33eO3RxXMnlE="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.glb",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4778200"
+          "Value": "6442644"
         },
         {
           "Name": "Content-Type",
@@ -3482,11 +3627,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+          "Value": "\"vqS6q81zVnME09PbvD8V1ivvWb+/4dvAFILlxrtlWZw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+          "Value": "Fri, 07 Mar 2025 03:06:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3496,13 +3641,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
+          "Value": "sha256-vqS6q81zVnME09PbvD8V1ivvWb+/4dvAFILlxrtlWZw="
         }
       ]
     },
     {
-      "Route": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.tgskekqgo6.glb",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Floral_Sofa_with_Cush_0208164616_texture.glb",
+      "Route": "Images/Products/OLD/Elegant_Pearls_Displa_0307030609_texture.ij43n93o4p.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Elegant_Pearls_Displa_0307030609_texture.glb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3511,7 +3656,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4778200"
+          "Value": "6442644"
         },
         {
           "Name": "Content-Type",
@@ -3519,11 +3664,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+          "Value": "\"vqS6q81zVnME09PbvD8V1ivvWb+/4dvAFILlxrtlWZw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+          "Value": "Fri, 07 Mar 2025 03:06:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3533,21 +3678,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgskekqgo6"
+          "Value": "ij43n93o4p"
         },
         {
           "Name": "label",
-          "Value": "Images/Products/OLD/Floral_Sofa_with_Cush_0208164616_texture.glb"
+          "Value": "Images/Products/OLD/Elegant_Pearls_Displa_0307030609_texture.glb"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
+          "Value": "sha256-vqS6q81zVnME09PbvD8V1ivvWb+/4dvAFILlxrtlWZw="
         }
       ]
     },
     {
-      "Route": "Images/Products/OLD/laptop.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
+      "Route": "Images/Products/OLD/Man_in_Navy_T_Shirt_0307031631_texture.dne18p38d2.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3556,56 +3701,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10900"
+          "Value": "5957160"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "application/octet-stream"
         },
         {
           "Name": "ETag",
-          "Value": "\"0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=\""
+          "Value": "\"aTx8C7YuM2w61gU5YhzQzDLU64sL7hSzJ1EuhLz3+ZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Products/OLD/laptop.spnv8n1qb2.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\laptop.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10900"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+          "Value": "Fri, 07 Mar 2025 03:16:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3615,15 +3723,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "spnv8n1qb2"
+          "Value": "dne18p38d2"
         },
         {
           "Name": "label",
-          "Value": "Images/Products/OLD/laptop.jpg"
+          "Value": "Images/Products/OLD/Man_in_Navy_T_Shirt_0307031631_texture.glb"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0N0MC029PvUjZhzRBzag2iKQNvoWetvMQcEh8CHFYwA="
+          "Value": "sha256-aTx8C7YuM2w61gU5YhzQzDLU64sL7hSzJ1EuhLz3+ZY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/Man_in_Navy_T_Shirt_0307031631_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Man_in_Navy_T_Shirt_0307031631_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5957160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aTx8C7YuM2w61gU5YhzQzDLU64sL7hSzJ1EuhLz3+ZY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:16:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aTx8C7YuM2w61gU5YhzQzDLU64sL7hSzJ1EuhLz3+ZY="
         }
       ]
     },
@@ -3710,6 +3855,88 @@
       ]
     },
     {
+      "Route": "Images/Products/OLD/Realme_Smartphone_Des_0307030955_texture.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3918040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o3rqq8mWeMiTjkMeiO1a13uGfOVCmC3H+k/qhv/hKcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:09:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o3rqq8mWeMiTjkMeiO1a13uGfOVCmC3H+k/qhv/hKcE="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/OLD/Realme_Smartphone_Des_0307030955_texture.tsducqvfbh.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\Realme_Smartphone_Des_0307030955_texture.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3918040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o3rqq8mWeMiTjkMeiO1a13uGfOVCmC3H+k/qhv/hKcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:09:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsducqvfbh"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/OLD/Realme_Smartphone_Des_0307030955_texture.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o3rqq8mWeMiTjkMeiO1a13uGfOVCmC3H+k/qhv/hKcE="
+        }
+      ]
+    },
+    {
       "Route": "Images/Products/OLD/smartphone.jpg",
       "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\smartphone.jpg",
       "Selectors": [],
@@ -3788,88 +4015,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-wpz5KW2wCyB8eTcsAT46SnOBuIn6/7yoxrEKxFgpp4g="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Products/OLD/sofa-set.0zlue76u55.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9026"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0zlue76u55"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Products/OLD/sofa-set.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Products/OLD/sofa-set.jpg",
-      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\OLD\\sofa-set.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9026"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
         }
       ]
     },
@@ -4444,6 +4589,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-p1kk5ohmWDt/4RPZRLcRleXJ+E0h5tHXQJ5MorhrWEM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sofa-set.0zlue76u55.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0zlue76u55"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/sofa-set.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sofa-set.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4778200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sofa-set.jpg",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9026"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 18:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPQVrg+fsgpqc8sKns4JRtEylVd0/RsYfWcCaUMh95A="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Products/sofa-set.tgskekqgo6.glb",
+      "AssetFile": "C:\\Users\\muh12\\source\\repos\\ECommerceLastest\\ECommerce\\ECommerce\\wwwroot\\Images\\Products\\sofa-set.glb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4778200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tgskekqgo6"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Products/sofa-set.glb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HQtmOpvJYgl07zUnZNr2HrEB5jPNQTVo/f9rigaCU5k="
         }
       ]
     }
