@@ -1,6 +1,7 @@
 *bin/
 *obj/
 .vs/
+*wwwroot/
 *.user
 *.suo
 *.db
