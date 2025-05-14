@@ -1,0 +1,82 @@
+[
+  {
+    "Name": "air_jordan",
+    "Description": "",
+    "PictureUrl": "Images/Products/1.png",
+    "UrlGlb": "Images/Products/1.glb",
+    "Price": 599.99,
+    "Quantity": 10,
+    "ProductBrandId": 2,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "basic_t-shirt_and_pants",
+    "Description": "",
+    "PictureUrl": "Images/Products/2.png",
+    "UrlGlb": "Images/Products/2.glb",
+    "Price": 399.99,
+    "Quantity": 5,
+    "ProductBrandId": 1,
+    "ProductTypeId": 2
+  },
+  {
+    "Name": "canon_at-1_retro_camera",
+    "Description": "",
+    "PictureUrl": "Images/Products/3.png",
+    "UrlGlb": "Images/Products/3.glb",
+    "Price": 19.99,
+    "Quantity": 50,
+    "ProductBrandId": 1,
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "chinese_style_tea_table",
+    "Description": "",
+    "PictureUrl": "Images/Products/4.png",
+    "UrlGlb": "Images/Products/4.glb",
+    "Price": 129.99,
+    "Quantity": 25,
+    "ProductBrandId": 1,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "headphones_free_model_by_oscar_creative",
+    "Description": "",
+    "PictureUrl": "Images/Products/5.png",
+    "UrlGlb": "Images/Products/5.glb",
+    "Price": 699.99,
+    "Quantity": 30,
+    "ProductBrandId": 1,
+    "ProductTypeId": 3
+  },
+  {
+    "Name": "samsung_family_hub_fridge",
+    "Description": "",
+    "PictureUrl": "Images/Products/6.png",
+    "UrlGlb": "Images/Products/6.glb",
+    "Price": 999.99,
+    "Quantity": 20,
+    "ProductBrandId": 4,
+    "ProductTypeId": 1
+  },
+  {
+    "Name": "samsung_galaxy_s22_ultra",
+    "Description": "",
+    "PictureUrl": "Images/Products/7.png",
+    "UrlGlb": "Images/Products/7.glb",
+    "Price": 999.99,
+    "Quantity": 20,
+    "ProductBrandId": 4,
+    "ProductTypeId": 4
+  },
+  {
+    "Name": "sci-fi_portal_gateway",
+    "Description": "",
+    "PictureUrl": "Images/Products/8.png",
+    "UrlGlb": "Images/Products/8.glb",
+    "Price": 999.99,
+    "Quantity": 20,
+    "ProductBrandId": 1,
+    "ProductTypeId": 4
+  }
+]
