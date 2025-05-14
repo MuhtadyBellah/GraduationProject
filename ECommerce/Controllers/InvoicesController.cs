@@ -113,6 +113,44 @@ namespace ECommerce.Controllers
             await _repos.CompleteAsync();
 
             var mapped = _mapper.Map<InvoiceResponse>(invoice);
+
+            using var stream = new MemoryStream();
+            var document = new PdfDocument();
+
+            //Action, Func, Predicate
+            int yPoint = 40;
+            Func<int, XGraphics> newPage = (x) =>
+            {
+                var page = document.AddPage();
+                return XGraphics.FromPdfPage(page);
+            };
+
+            var gfx = newPage(40);
+            Action<string, int?> drawText = (text, size) =>
+            {
+                gfx.DrawString($"{text}", new XFont("Arial", size ?? 12), XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
+                yPoint += 20;
+            };
+
+            drawText($"Invoices for UserID: {userId}", 20);
+            drawText($"Invoice Number: {mapped.InvoiceNumber}", null);
+            drawText($"Invoice Order: {mapped.Order}", null);
+            drawText($"Date: {mapped.InvoiceDate}", null);
+            drawText($"Total Amount: {mapped.TotalAmount}$", null);
+            drawText($"Paid: {(mapped.IsPaid ? "Paid" : "Not Paid Yet")}", null);
+            drawText($"Billing Address: {mapped.BillingAddress}", null);
+            drawText($"Payment Method: {mapped.PaymentMethod}", null);
+            drawText($"Payment Date: {mapped.PaymentDate}", null);
+            drawText($"Transaction ID: {mapped.TransactionId}", null);
+
+            document.Save(stream, false);
+            stream.Position = 0;
+            var fileName = $"Invoices_{DateTime.Now:yyyyMMddHHmmss}.pdf";
+            var file = new FormFile(stream, 0, stream.Length, "Invoices", fileName);
+            var attachments = new List<IFormFile> { file };
+
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            await _mailServices.SendEmailAsync(email, "Invoice", "Please Check Your Invoice", attachments);
             return Ok(mapped);
         }
 
@@ -181,11 +219,17 @@ namespace ECommerce.Controllers
             var mapped = _mapper.Map<IEnumerable<InvoiceResponse>>(invoices);
             using var stream = new MemoryStream();
             var document = new PdfDocument();
-            var page = document.AddPage();
-            var gfx = XGraphics.FromPdfPage(page);
-            var yPoint = 40;
 
             //Action, Func, Predicate
+            int yPoint = 0;
+            Func<int, XGraphics> newPage = (x) =>
+            {
+                var page = document.AddPage();
+                yPoint = 40;
+                return XGraphics.FromPdfPage(page);
+            };
+
+            var gfx = newPage(40);
             Action<string, int?> drawText = (text, size) => 
             {
                 gfx.DrawString($"{text}", new XFont("Arial", size ?? 12), XBrushes.Black, new XRect(20, yPoint, 20, 20), XStringFormats.TopLeft);
@@ -204,7 +248,8 @@ namespace ECommerce.Controllers
                 drawText($"Payment Method: {invoice.PaymentMethod}", null);
                 drawText($"Payment Date: {invoice.PaymentDate}", null);
                 drawText($"Transaction ID: {invoice.TransactionId}", null);
-                yPoint += 20;
+
+                newPage(40);
             }
 
             document.Save(stream, false);
@@ -214,7 +259,7 @@ namespace ECommerce.Controllers
             var attachments = new List<IFormFile> { file };
 
             var email = User.FindFirst(ClaimTypes.Email)?.Value;
-            await _mailServices.SendEmailAsync(email, "Invoice", "Please Check You Invoice", attachments);
+            await _mailServices.SendEmailAsync(email, "Invoice", "Please Check Your Invoice", attachments);
             return Ok(new ApiResponse(200, "Please Check Email and Check Your Invoice"));
         }
     }
