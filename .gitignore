@@ -4,7 +4,4 @@
 *wwwroot/
 *.user
 *.suo
-*.db
-*.exe
-*.dll
 *.cache

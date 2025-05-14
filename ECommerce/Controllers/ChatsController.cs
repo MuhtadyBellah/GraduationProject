@@ -8,7 +8,6 @@ using ECommerce.Core.Specifications;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using ECommerce.DTO.Request;
-using GraphQL;
 
 namespace ECommerce.Controllers
 {
