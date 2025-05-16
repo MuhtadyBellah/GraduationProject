@@ -45,8 +45,9 @@ namespace ECommerce.Controllers
         }
         */
 
+        public record ChatResponse(int chatId, string category);
         [HttpPost("{category}")]
-        public async Task<ActionResult<(int, string)>> PostChat(string category)
+        public async Task<ActionResult<ChatResponse>> PostChat(string category)
         {
             var userRole = User.FindFirstValue(ClaimTypes.Role);
             if (userRole == null) return Unauthorized(new ApiResponse(401));
@@ -88,7 +89,7 @@ namespace ECommerce.Controllers
 
                 category = chat.Category;
             }
-            return Ok((chat.Id, category));
+            return Ok(new ChatResponse(chat.Id, category));
         }
 
         [HttpPut("{chatId}")]
