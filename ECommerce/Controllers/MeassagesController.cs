@@ -31,19 +31,18 @@ namespace ECommerce.Controllers
         }
 
         [HttpGet("getUserMessages")]
-        public async Task<ActionResult> GetUserMessages(string userDisplay)
+        public async Task<ActionResult<IEnumerable<MessageResponse>>> GetUserMessages()
         {
             var userId = User?.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null) return Unauthorized(new ApiResponse(401));
 
+            var userName = User?.FindFirstValue(ClaimTypes.Name);
             var messages = await _unitWork.Repo<Message>().GetAllAsync(new MessageSpec(int.Parse(userId), null));
             if (messages == null) return NotFound(new ApiResponse(404));
 
             var mapped = _mapper.Map<IEnumerable<MessageResponse>>(messages);
-            if (messages == null) return NotFound(new ApiResponse(404));
-
-            await _contextHttp.Clients.All.ReceiveUserMessages(userDisplay, mapped);
-            return Ok(new ApiResponse(200));
+            await _contextHttp.Clients.All.ReceiveUserMessages(userName, mapped);
+            return Ok(mapped);
         }
 
         [HttpPost]

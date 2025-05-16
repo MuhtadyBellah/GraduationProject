@@ -30,18 +30,18 @@ namespace ECommerce.Controllers
 
         [HttpGet]
         [Cached(300)]
-        //[Authorize("Sanctum")]
+        [Authorize("Sanctum")]
         [ProducesResponseType(typeof(Pagination<ProductResponse>), 200)]
         public async Task<ActionResult<Pagination<ProductResponse>>> GetProducts([FromQuery] ProductSpecParams param)
         {
-            //var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            //if (userId == null) return Unauthorized(new ApiResponse(401));
-            
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null) return Unauthorized(new ApiResponse(401));
+
             var spec = new ProductSpecific(param);
             var products = await _repos.Repo<Product>().GetAllAsync(spec);
 
             var mapProducts = _mapper.Map<IEnumerable<ProductResponse>>(products, opt => {
-                opt.Items["UserId"] = null;
+                opt.Items["UserId"] = userId;
             });
             var CountSpec = new ProductFilterationCount(param);
             var count = await _repos.Repo<Product>().GetCountAsync(CountSpec);
@@ -71,8 +71,6 @@ namespace ECommerce.Controllers
         }
 
         [HttpGet("{id}/img")]
-        [Cached(3000)]
-        [ProducesResponseType(typeof(HttpContent), 200)]
         [ProducesResponseType(typeof(ApiResponse), 404)]
         public async Task<ActionResult> GetItemPictureById(int id)
         {
@@ -80,12 +78,13 @@ namespace ECommerce.Controllers
 
             var spec = new ProductSpecific(id);
             var product = await _repos.Repo<Product>().GetByIdAsync(spec);
-            return product is null ? NotFound(new ApiResponse(404)) : Redirect(product.PictureUrl);
+            var mapProducts = _mapper.Map<ProductResponse>(product, opt => {
+                opt.Items["UserId"] = null;
+            });
+            return mapProducts is null ? NotFound(new ApiResponse(404)) : Redirect(mapProducts.PictureUrl);
         }
 
         [HttpGet("{id}/imgGlb")]
-        [Cached(3000)]
-        [ProducesResponseType(typeof(HttpContent), 200)]
         [ProducesResponseType(typeof(ApiResponse), 404)]
         public async Task<ActionResult> GetItemPictureGlb(int id)
         {
@@ -93,7 +92,10 @@ namespace ECommerce.Controllers
 
             var spec = new ProductSpecific(id);
             var product = await _repos.Repo<Product>().GetByIdAsync(spec);
-            return product is null ? NotFound(new ApiResponse(404)) : Ok(product.UrlGlb);
+            var mapProducts = _mapper.Map<ProductResponse>(product, opt => {
+                opt.Items["UserId"] = null;
+            });
+            return mapProducts is null ? NotFound(new ApiResponse(404)) : Ok(mapProducts.UrlGlb);
         }
         
         [HttpPut("{id}")]

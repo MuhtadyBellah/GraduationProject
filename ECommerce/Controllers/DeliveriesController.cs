@@ -118,12 +118,13 @@ namespace ECommerce.Controllers
             return Ok(mapped);
         }
 
+        public record DeliveryRequest(decimal userLongitude, decimal userLatitude);
         [HttpPut("{id}/costs")]
         [Authorize("Sanctum")]
         [ProducesResponseType(typeof(DeliveryDTO), 200)]
         [ProducesResponseType(typeof(ApiResponse), 404)]
         [ProducesResponseType(typeof(ApiResponse), 500)]
-        public async Task<ActionResult<DeliveryDTO>> UpdateDeliveryCost(int id, decimal userLongitude, decimal userLatitude)
+        public async Task<ActionResult<DeliveryDTO>> UpdateDeliveryCost(int id, [FromBody] DeliveryRequest req)
         {
             var spec = new deliverSpec(id);
             var delivery = await _repos.Repo<Delivery>().GetByIdAsync(spec);
@@ -131,7 +132,7 @@ namespace ECommerce.Controllers
                 return NotFound(new ApiResponse(404));
 
             var distance = DeliveryCostCalculator.CalculateDistanceInKm(
-                userLatitude, userLongitude,
+                req.userLatitude, req.userLongitude,
                 delivery.lateLatiude, delivery.longLatiude
             );
             var cost = DeliveryCostCalculator.CalculateCost(distance);
