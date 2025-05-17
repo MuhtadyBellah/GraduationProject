@@ -1,43 +1,37 @@
 # Auth
 
-## Create a new user
+{% openapi-operation spec="laravel" path="/register" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-<mark style="color:green;">`POST`</mark> `/users`
+{% openapi-operation spec="laravel" path="/send/email/verification" method="get" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-\<Description of the endpoint>
+{% openapi-operation spec="laravel" path="/email/verification" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-**Headers**
+{% openapi-operation spec="laravel" path="/login" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-| Name          | Value              |
-| ------------- | ------------------ |
-| Content-Type  | `application/json` |
-| Authorization | `Bearer <token>`   |
+{% openapi-operation spec="laravel" path="/forget/password" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-**Body**
+{% openapi-operation spec="laravel" path="/reset/password" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-| Name   | Type   | Description      |
-| ------ | ------ | ---------------- |
-| `name` | string | Name of the user |
-| `age`  | number | Age of the user  |
+{% openapi-operation spec="laravel" path="/refresh/token" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-**Response**
+{% openapi-operation spec="laravel" path="/logout" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
 
-{% tabs %}
-{% tab title="200" %}
-```json
-{
-  "id": 1,
-  "name": "John",
-  "age": 30
-}
-```
-{% endtab %}
-
-{% tab title="400" %}
-```json
-{
-  "error": "Invalid request"
-}
-```
-{% endtab %}
-{% endtabs %}
+{% openapi-operation spec="laravel" path="/auth/google" method="get" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}
