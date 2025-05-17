@@ -125,8 +125,8 @@ Got 2 minutes? Check out a video overview of our Project:
 [database-design.md](../fundamentals/database-design.md)
 {% endcontent-ref %}
 
-{% content-ref url="../use-cases/for-designers.md" %}
-[for-designers.md](../use-cases/for-designers.md)
+{% content-ref url="../use-cases/for-designers/" %}
+[for-designers](../use-cases/for-designers/)
 {% endcontent-ref %}
 
 {% content-ref url="../use-cases/for-developers/" %}

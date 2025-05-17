@@ -1,6 +1,8 @@
-# 🎨 For Designers
+---
+icon: figma
+---
 
-## Figma Integrations
+# Figma
 
 {% tabs %}
 {% tab title="Installing" %}
@@ -15,4 +17,3 @@
 
 {% endtab %}
 {% endtabs %}
-

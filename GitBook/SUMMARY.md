@@ -18,7 +18,10 @@
 
 ## Use Cases
 
-* [🎨 For Designers](use-cases/for-designers.md)
+* [🎨 For Designers](use-cases/for-designers/README.md)
+  * [Figma](use-cases/for-designers/figma.md)
+  * [User UI](use-cases/for-designers/user-ui.md)
+  * [Admin UI](use-cases/for-designers/admin-ui.md)
 * [💻 For Developers](use-cases/for-developers/README.md)
   * [API Endpoints](use-cases/for-developers/api-endpoints/README.md)
     * [Auth](use-cases/for-developers/api-endpoints/auth.md)
