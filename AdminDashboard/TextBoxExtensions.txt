@@ -1,0 +1,34 @@
+public static class TextBoxExtensions
+    {
+        public static void AddPlaceholder(this TextBox textBox, string placeholder)
+        {
+            textBox.ForeColor = Color.Gray;
+            textBox.Text = placeholder;
+
+            bool isPasswordBox = textBox.UseSystemPasswordChar;
+            if (isPasswordBox)
+                textBox.UseSystemPasswordChar = false;
+
+            textBox.Enter += (sender, e) =>
+            {
+                if (textBox.Text == placeholder)
+                {
+                    textBox.Text = "";
+                    textBox.ForeColor = Color.Black;
+                    if (isPasswordBox)
+                        textBox.UseSystemPasswordChar = true;
+                }
+            };
+
+            textBox.Leave += (sender, e) =>
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    textBox.Text = placeholder;
+                    textBox.ForeColor = Color.Gray;
+                    if (isPasswordBox)
+                        textBox.UseSystemPasswordChar = false;
+                }
+            };
+        }
+    }
