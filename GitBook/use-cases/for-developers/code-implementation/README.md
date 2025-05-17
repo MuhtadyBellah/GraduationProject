@@ -8,8 +8,8 @@ icon: code
 [flutter-code.md](flutter-code.md)
 {% endcontent-ref %}
 
-{% content-ref url="dot-net-code.md" %}
-[dot-net-code.md](dot-net-code.md)
+{% content-ref url="dotnet-code.md" %}
+[dotnet-code.md](dotnet-code.md)
 {% endcontent-ref %}
 
 {% content-ref url="laravel-code.md" %}
