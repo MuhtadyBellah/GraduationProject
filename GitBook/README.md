@@ -17,11 +17,11 @@ layout:
     visible: true
 ---
 
-# 3M\&K AR-Commerce
+# 3MK AR-Commerce
 
 **Prepared by**\
+**EL Muhtay Bellah Hassan Abdullah EL Mahdy**\
 **Mario Youssef Mounir Ishaq**\
-**El-Muhtay Bellah Hassan Abdullah**\
 **Mustafa Gharib Mahmoud Gharib**\
 **Kiriya Ashraf Lahzi Riyad**
 
@@ -31,12 +31,12 @@ layout:
 **2024-2025**
 
 {% hint style="success" %}
-**GitBook tip:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in our Project.
+**GitBook tip: your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in our Project.**
 {% endhint %}
 
-## Overview
+## **Overview**
 
-(3M\&K) is an e-commerce application integrated with augmented reality (AR) to allow users to buy products and access services online. This application offers one of the most widely used, popular, and effective solutions for businesses in the digital space.
+**(3MK) is an innovative e-commerce application that leverages augmented reality (AR) to enhance the online shopping experience. By seamlessly integrating AR, it allows users to visualize products in their real-world environment before making a purchase, providing an engaging and interactive way to access products and services online. (3MK) is recognized for its popularity and effectiveness as a digital solution, offering businesses a powerful tool to thrive in the competitive**
 
 ## Quick links
 

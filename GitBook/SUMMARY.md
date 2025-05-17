@@ -1,6 +1,6 @@
 # Table of contents
 
-* [3M\&K AR-Commerce](README.md)
+* [3MK AR-Commerce](README.md)
 
 ## Overview
 
