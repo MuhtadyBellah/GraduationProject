@@ -26,10 +26,6 @@ icon: webhook
 [likes.md](likes.md)
 {% endcontent-ref %}
 
-{% content-ref url="rate.md" %}
-[rate.md](rate.md)
-{% endcontent-ref %}
-
 {% content-ref url="coupons.md" %}
 [coupons.md](coupons.md)
 {% endcontent-ref %}
@@ -40,6 +36,10 @@ icon: webhook
 
 {% content-ref url="orders.md" %}
 [orders.md](orders.md)
+{% endcontent-ref %}
+
+{% content-ref url="rate.md" %}
+[rate.md](rate.md)
 {% endcontent-ref %}
 
 {% content-ref url="delveries.md" %}

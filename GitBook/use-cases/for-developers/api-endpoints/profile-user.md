@@ -1,3 +1,7 @@
+---
+icon: square-user
+---
+
 # Profile User
 
 {% openapi-operation spec="laravel" path="/profile" method="get" %}

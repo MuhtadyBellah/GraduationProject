@@ -1,3 +1,7 @@
+---
+icon: cart-shopping
+---
+
 # Carts
 
 {% openapi-operation spec="laravel" path="/cart" method="get" %}
