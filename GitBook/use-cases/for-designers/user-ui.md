@@ -40,7 +40,7 @@ icon: user
 
 {% tabs fullWidth="true" %}
 {% tab title="Carts" %}
-<div><figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.34 AM (3).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.35 AM (3).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.36 AM.jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.36 AM (1).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.34 AM (2).jpeg" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.34 AM (3).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.34 AM (2).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.36 AM (1).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.36 AM.jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.35 AM (3).jpeg" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="Orders" %}
