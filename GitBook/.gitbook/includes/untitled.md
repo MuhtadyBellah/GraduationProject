@@ -2,6 +2,6 @@
 title: Untitled
 ---
 
-{% content-ref url="../../use-cases/for-developers/api-endpoints/auth.md" %}
-[auth.md](../../use-cases/for-developers/api-endpoints/auth.md)
+{% content-ref url="../../developer-guide/for-developers/api-endpoints/auth.md" %}
+[auth.md](../../developer-guide/for-developers/api-endpoints/auth.md)
 {% endcontent-ref %}

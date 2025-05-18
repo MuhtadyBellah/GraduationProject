@@ -58,7 +58,9 @@ icon: user
 
 <div><figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.34 AM (1).jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.35 AM.jpeg" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
+{% endtabs %}
 
+{% tabs %}
 {% tab title="Favorites" %}
 <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.29 AM (2) (2).jpeg" alt="" width="360"><figcaption></figcaption></figure>
 
@@ -71,4 +73,3 @@ icon: user
 
 {% endtab %}
 {% endtabs %}
-

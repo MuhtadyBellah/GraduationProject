@@ -1,11 +1,10 @@
 # Table of contents
 
+## Introduction
+
 * [3MK AR-Commerce](README.md)
-
-## Overview
-
-* [✨ Our Features](overview/our-features.md)
-* [💡 What we do](overview/what-we-do.md)
+* [✨ Goals](introduction/goals.md)
+* [💡 What we do](introduction/what-we-do.md)
 
 ## Fundamentals
 
@@ -16,38 +15,41 @@
   * [PostGree](fundamentals/tools-used/postgree.md)
 * [Database Design](fundamentals/database-design.md)
 
-## Use Cases
+## User Guide
 
-* [🎨 For Designers](use-cases/for-designers/README.md)
-  * [Figma](use-cases/for-designers/figma.md)
-  * [User UI](use-cases/for-designers/user-ui.md)
-  * [Admin UI](use-cases/for-designers/admin-ui.md)
-* [💻 For Developers](use-cases/for-developers/README.md)
-  * [API Endpoints](use-cases/for-developers/api-endpoints/README.md)
-    * [Auth](use-cases/for-developers/api-endpoints/auth.md)
-    * [Products](use-cases/for-developers/api-endpoints/products.md)
-    * [Categories](use-cases/for-developers/api-endpoints/categories.md)
-    * [Brands](use-cases/for-developers/api-endpoints/brands.md)
-    * [Favorites](use-cases/for-developers/api-endpoints/favorites.md)
-    * [Likes](use-cases/for-developers/api-endpoints/likes.md)
-    * [Coupons](use-cases/for-developers/api-endpoints/coupons.md)
-    * [Carts](use-cases/for-developers/api-endpoints/carts.md)
-    * [Orders](use-cases/for-developers/api-endpoints/orders.md)
-    * [Stripe](use-cases/for-developers/api-endpoints/stripe.md)
-    * [Rate](use-cases/for-developers/api-endpoints/rate.md)
-    * [Delveries](use-cases/for-developers/api-endpoints/delveries.md)
-    * [Invoices](use-cases/for-developers/api-endpoints/invoices.md)
-    * [Profile User](use-cases/for-developers/api-endpoints/profile-user.md)
-    * [Chats](use-cases/for-developers/api-endpoints/chats.md)
-    * [Messages](use-cases/for-developers/api-endpoints/messages.md)
-    * [ChatTickets](use-cases/for-developers/api-endpoints/chattickets.md)
-    * [Mails](use-cases/for-developers/api-endpoints/mails.md)
-    * [Cache](use-cases/for-developers/api-endpoints/cache.md)
-  * [Code Implementation](use-cases/for-developers/code-implementation/README.md)
-    * [Flutter Code](use-cases/for-developers/code-implementation/flutter-code.md)
-    * [DotNet Code](use-cases/for-developers/code-implementation/dotnet-code.md)
-    * [Laravel Code](use-cases/for-developers/code-implementation/laravel-code.md)
-  * [Programs Used](use-cases/for-developers/programs-used.md)
+* [🎨 For Designers](user-guide/for-designers/README.md)
+  * [Figma](user-guide/for-designers/figma.md)
+  * [User UI](user-guide/for-designers/user-ui.md)
+  * [Admin UI](user-guide/for-designers/admin-ui.md)
+
+## Developer Guide
+
+* [💻 For Developers](developer-guide/for-developers/README.md)
+  * [API Endpoints](developer-guide/for-developers/api-endpoints/README.md)
+    * [Auth](developer-guide/for-developers/api-endpoints/auth.md)
+    * [Products](developer-guide/for-developers/api-endpoints/products.md)
+    * [Categories](developer-guide/for-developers/api-endpoints/categories.md)
+    * [Brands](developer-guide/for-developers/api-endpoints/brands.md)
+    * [Favorites](developer-guide/for-developers/api-endpoints/favorites.md)
+    * [Likes](developer-guide/for-developers/api-endpoints/likes.md)
+    * [Coupons](developer-guide/for-developers/api-endpoints/coupons.md)
+    * [Carts](developer-guide/for-developers/api-endpoints/carts.md)
+    * [Orders](developer-guide/for-developers/api-endpoints/orders.md)
+    * [Stripe](developer-guide/for-developers/api-endpoints/stripe.md)
+    * [Rate](developer-guide/for-developers/api-endpoints/rate.md)
+    * [Delveries](developer-guide/for-developers/api-endpoints/delveries.md)
+    * [Invoices](developer-guide/for-developers/api-endpoints/invoices.md)
+    * [Profile User](developer-guide/for-developers/api-endpoints/profile-user.md)
+    * [Chats](developer-guide/for-developers/api-endpoints/chats.md)
+    * [Messages](developer-guide/for-developers/api-endpoints/messages.md)
+    * [ChatTickets](developer-guide/for-developers/api-endpoints/chattickets.md)
+    * [Mails](developer-guide/for-developers/api-endpoints/mails.md)
+    * [Cache](developer-guide/for-developers/api-endpoints/cache.md)
+  * [Code Implementation](developer-guide/for-developers/code-implementation/README.md)
+    * [Flutter Code](developer-guide/for-developers/code-implementation/flutter-code.md)
+    * [DotNet Code](developer-guide/for-developers/code-implementation/dotnet-code.md)
+    * [Laravel Code](developer-guide/for-developers/code-implementation/laravel-code.md)
+  * [Programs Used](developer-guide/for-developers/programs-used.md)
 
 ## Refrences
 

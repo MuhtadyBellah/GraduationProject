@@ -36,14 +36,18 @@ layout:
 
 ## **Overview**
 
-**(3MK) is an innovative e-commerce application that leverages augmented reality (AR) to enhance the online shopping experience. By seamlessly integrating AR, it allows users to visualize products in their real-world environment before making a purchase, providing an engaging and interactive way to access products and services online. (3MK) is recognized for its popularity and effectiveness as a digital solution, offering businesses a powerful tool to thrive in the competitive**
+**AR-Commerce** is an innovative e-commerce platform that bridges the gap between online shopping and real-world visualization.
+
+By harnessing the power of Augmented Reality (AR), users can place life-sized 3D models of products directly into their environment—whether it’s a new sofa in their living room or a piece of art on their office wall—before making a purchase.
+
+Built with Flutter on the front end and a microservices-style back end (ASP.NET Core and Laravel), AR-Commerce delivers smooth performance, and a secure checkout powered by Stripe.
 
 ## Quick links
 
-{% content-ref url="overview/our-features.md" %}
-[our-features.md](overview/our-features.md)
+{% content-ref url="introduction/goals.md" %}
+[goals.md](introduction/goals.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/what-we-do.md" %}
-[what-we-do.md](overview/what-we-do.md)
+{% content-ref url="introduction/what-we-do.md" %}
+[what-we-do.md](introduction/what-we-do.md)
 {% endcontent-ref %}
