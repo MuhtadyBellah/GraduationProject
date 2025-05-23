@@ -162,7 +162,7 @@ namespace AdminDashboard
 
             var lblTitle = new Label
             {
-                Text = isEdit ? "Edit Brand" : "Add Brand",
+                Text = isEdit ? "Edit Role" : "Add User",
                 Font = new Font("Segoe UI", 12, FontStyle.Bold),
                 Location = new Point(20, 20),
                 AutoSize = true

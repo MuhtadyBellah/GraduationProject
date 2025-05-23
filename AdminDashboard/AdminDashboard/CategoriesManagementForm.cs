@@ -30,7 +30,7 @@ namespace AdminDashboard
         private void InitializeForm()
         {
             // Form settings
-            this.Text = "Manage Brands";
+            this.Text = "Manage Categories";
             this.Size = new Size(900, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
 
