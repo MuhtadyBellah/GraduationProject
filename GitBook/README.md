@@ -17,11 +17,11 @@ layout:
     visible: true
 ---
 
-# 3M\&K AR-Commerce
+# 3MK AR-Commerce
 
 **Prepared by**\
+**EL Muhtay Bellah Hassan Abdullah EL Mahdy**\
 **Mario Youssef Mounir Ishaq**\
-**El-Muhtay Bellah Hassan Abdullah**\
 **Mustafa Gharib Mahmoud Gharib**\
 **Kiriya Ashraf Lahzi Riyad**
 
@@ -31,19 +31,23 @@ layout:
 **2024-2025**
 
 {% hint style="success" %}
-**GitBook tip:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in our Project.
+**GitBook tip: your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in our Project.**
 {% endhint %}
 
-## Overview
+## **Overview**
 
-(3M\&K) is an e-commerce application integrated with augmented reality (AR) to allow users to buy products and access services online. This application offers one of the most widely used, popular, and effective solutions for businesses in the digital space.
+**AR-Commerce** is an innovative e-commerce platform that bridges the gap between online shopping and real-world visualization.
+
+By harnessing the power of Augmented Reality (AR), users can place life-sized 3D models of products directly into their environment—whether it’s a new sofa in their living room or a piece of art on their office wall—before making a purchase.
+
+Built with Flutter on the front end and a microservices-style back end (ASP.NET Core and Laravel), AR-Commerce delivers smooth performance, and a secure checkout powered by Stripe.
 
 ## Quick links
 
-{% content-ref url="overview/our-features.md" %}
-[our-features.md](overview/our-features.md)
+{% content-ref url="introduction/goals.md" %}
+[goals.md](introduction/goals.md)
 {% endcontent-ref %}
 
-{% content-ref url="overview/what-we-do.md" %}
-[what-we-do.md](overview/what-we-do.md)
+{% content-ref url="introduction/what-we-do.md" %}
+[what-we-do.md](introduction/what-we-do.md)
 {% endcontent-ref %}
