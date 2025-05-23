@@ -36,6 +36,10 @@ icon: user
 {% tab title="View Products" %}
 <div><figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.30 AM.jpeg" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-18 at 1.13.29 AM (3) (1).jpeg" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
+
+{% tab title="AR" %}
+<div><figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-23 at 3.07.31 PM (1).jpeg" alt=""><figcaption><p>AR Core</p></figcaption></figure> <figure><img src="../../.gitbook/assets/WhatsApp Image 2025-05-23 at 3.07.31 PM.jpeg" alt="" width="540"><figcaption><p>My Web AR</p></figcaption></figure></div>
+{% endtab %}
 {% endtabs %}
 
 {% tabs fullWidth="true" %}

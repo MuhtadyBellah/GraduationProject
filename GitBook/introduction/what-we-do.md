@@ -121,9 +121,11 @@
 
 ## Video overview
 
-Got 2 minutes? Check out a video overview of our Project:
+Got 5 minutes? Check out a video overview of our Project:
 
-{% embed url="https://www.loom.com/embed/3bfa83acc9fd41b7b98b803ba9197d90" %}
+{% file src="../.gitbook/assets/Demo.mp4" %}
+
+{% embed url="https://www.loom.com/share/f6b60ac04425427c8919ac86a08dad08?sid=cc45438c-dec2-4ebb-94f7-77d330862b9f" %}
 
 ***
 

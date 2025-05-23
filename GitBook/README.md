@@ -42,6 +42,16 @@ By harnessing the power of Augmented Reality (AR), users can place life-sized 3D
 
 Built with Flutter on the front end and a microservices-style back end (ASP.NET Core and Laravel), AR-Commerce delivers smooth performance, and a secure checkout powered by Stripe.
 
+***
+
+## Video overview
+
+Got 5 minutes? Check out a video overview of our Project:
+
+{% file src=".gitbook/assets/Demo.mp4" %}
+
+{% embed url="https://www.loom.com/share/f6b60ac04425427c8919ac86a08dad08?sid=cc45438c-dec2-4ebb-94f7-77d330862b9f" %}
+
 ## Quick links
 
 {% content-ref url="introduction/goals.md" %}
