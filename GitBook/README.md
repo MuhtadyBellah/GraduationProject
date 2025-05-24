@@ -48,9 +48,19 @@ Built with Flutter on the front end and a microservices-style back end (ASP.NET 
 
 Got 5 minutes? Check out a video overview of our Project:
 
+{% tabs %}
+{% tab title="App Demo" %}
 {% file src=".gitbook/assets/Demo.mp4" %}
+{% endtab %}
+
+{% tab title="Admin DashBoard Demo" %}
+{% file src=".gitbook/assets/Admin Demo.mp4" %}
+{% endtab %}
+{% endtabs %}
 
 {% embed url="https://www.loom.com/share/f6b60ac04425427c8919ac86a08dad08?sid=cc45438c-dec2-4ebb-94f7-77d330862b9f" %}
+
+***
 
 ## Quick links
 
@@ -60,4 +70,20 @@ Got 5 minutes? Check out a video overview of our Project:
 
 {% content-ref url="introduction/what-we-do.md" %}
 [what-we-do.md](introduction/what-we-do.md)
+{% endcontent-ref %}
+
+{% content-ref url="fundamentals/tools-used/" %}
+[tools-used](fundamentals/tools-used/)
+{% endcontent-ref %}
+
+{% content-ref url="fundamentals/database-design.md" %}
+[database-design.md](fundamentals/database-design.md)
+{% endcontent-ref %}
+
+{% content-ref url="user-guide/for-designers/" %}
+[for-designers](user-guide/for-designers/)
+{% endcontent-ref %}
+
+{% content-ref url="developer-guide/for-developers/" %}
+[for-developers](developer-guide/for-developers/)
 {% endcontent-ref %}

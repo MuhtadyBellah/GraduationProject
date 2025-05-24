@@ -50,7 +50,7 @@ namespace ECommerce.Controllers
                 if (i >= _items.Count) break;
 
                 tasks.Add( 
-                    _cacheService.CacheDataAsync(_cacheKey + product.Id, _items[i++], TimeSpan.FromDays(5))
+                    _cacheService.CacheDataAsync(_cacheKey + product.Id, _items[i++], TimeSpan.FromDays(30))
                     );
             }
             await Task.WhenAll(tasks);
