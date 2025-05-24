@@ -43,11 +43,11 @@ namespace AdminDashboard
                 return null;
             }
         }
-        public async Task<ProductPaged> GetAllPagedAsync()
+        public async Task<ProductPaged> GetAllPagedAsync(int size, int index)
         {
             try
             {
-                var response = await httpClient.GetAsync($"Product");
+                var response = await httpClient.GetAsync($"Product?PageSize={size}&PageIndex={index}");
                 response.EnsureSuccessStatusCode();
 
                 var jsonResponse = await response.Content.ReadAsStringAsync();

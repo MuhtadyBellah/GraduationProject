@@ -2,6 +2,7 @@
 using AdminDashboard.Request;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Drawing;
 using System.IO;
@@ -16,6 +17,10 @@ namespace AdminDashboard
         private FlowLayoutPanel productsPanel;
         private readonly string _token;
         private Button addProductButton;
+        private int currentPage = 1;
+        private int pageSize = 3;
+        private int totalItems = 0;
+        private Panel paginationPanel;
 
         public ProductsManagementForm(string token)
         {
@@ -78,16 +83,96 @@ namespace AdminDashboard
 
         private async void LoadProducts()
         {
-            var productService = new Product(_token);
-            var products = await productService.GetAllPagedAsync();
+            var pagedResponse = await new Product(_token).GetAllPagedAsync(pageSize , currentPage);
 
+            totalItems = pagedResponse.count;
             productsPanel.Controls.Clear();
 
-            foreach (var product in products.data)
+            foreach (var product in pagedResponse.data)
             {
                 var productCard = CreateProductCard(product);
                 productsPanel.Controls.Add(productCard);
             }
+
+            RenderPaginationControls();
+        }
+
+        private void RenderPaginationControls()
+        {
+            // Remove old panel
+            if (paginationPanel != null)
+                this.Controls.Remove(paginationPanel);
+
+            paginationPanel = new Panel
+            {
+                Dock = DockStyle.Bottom,
+                Height = 60,
+                BackColor = Color.White,
+                Padding = new Padding(10)
+            };
+
+            // FlowLayoutPanel to hold buttons
+            var flowPanel = new FlowLayoutPanel
+            {
+                AutoSize = true,
+                FlowDirection = FlowDirection.LeftToRight,
+                WrapContents = false,
+                Dock = DockStyle.Fill
+            };
+            paginationPanel.Controls.Add(flowPanel);
+
+            int totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+            void AddButton(string text, int? goToPage = null, bool enabled = true, bool isCurrent = false)
+            {
+                var btn = new Button
+                {
+                    Text = text,
+                    Enabled = enabled,
+                    Width = 40,
+                    Height = 30,
+                    Margin = new Padding(3)
+                };
+
+                if (isCurrent)
+                {
+                    btn.Font = new Font(btn.Font, FontStyle.Bold);
+                    btn.BackColor = Color.LightGray;
+                }
+
+                btn.Click += (s, e) =>
+                {
+                    if (goToPage.HasValue)
+                    {
+                        currentPage = goToPage.Value;
+                        LoadProducts();
+                    }
+                };
+
+                flowPanel.Controls.Add(btn);
+            }
+
+            // Prev button
+            AddButton("<", currentPage - 1, currentPage > 1);
+
+            for (int i = 1; i <= totalPages; i++)
+            {
+                if (i == 1 || i == totalPages || Math.Abs(i - currentPage) <= 1)
+                {
+                    AddButton(i.ToString(), i, i != currentPage, i == currentPage);
+                }
+                else if (i == 2 && currentPage > 4 || i == totalPages - 1 && currentPage < totalPages - 3)
+                {
+                    AddButton("...", null, false);
+                    i = (i == 2) ? currentPage - 2 : totalPages - 1;
+                }
+            }
+
+            // Next button
+            AddButton(">", currentPage + 1, currentPage < totalPages);
+
+            this.Controls.Add(paginationPanel);
+            paginationPanel.BringToFront();
         }
 
         private Panel CreateProductCard(ProductResponse product)
