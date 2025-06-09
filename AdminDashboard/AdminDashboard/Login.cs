@@ -6,27 +6,24 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using AdminDashboard.Handler;
 
 namespace AdminDashboard
 {
     public class Login
     {
         private readonly HttpClient httpClient;
-        private readonly string email;
-        private readonly string password;
-
-        public Login(string email, string password)
+        
+        public Login()
         {
-            this.email = email;
-            this.password = password;
             this.httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(Base.url(1));
+            httpClient.BaseAddress = new Uri(Base.Laravel());
             httpClient.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
 
-        public async Task<ProfileResponse> AuthenticateUserAsync()
+        public async Task<ProfileResponse> AuthenticateUserAsync(string email, string password)
         {
             var formData = new MultipartFormDataContent();
             formData.Add(new StringContent(email), "email");

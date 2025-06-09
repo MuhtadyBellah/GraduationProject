@@ -1,4 +1,5 @@
 ﻿using AdminDashboard.Handler;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,9 +33,9 @@ namespace AdminDashboard
         private void InitializeForm()
         {
             // Form settings
-            this.Text = "Manage Users";
-            this.Size = new Size(1000, 600);
-            this.StartPosition = FormStartPosition.CenterScreen;
+            Text = "Manage Users";
+            Size = new Size(1000, 600);
+            StartPosition = FormStartPosition.CenterScreen;
 
             // DataGridView setup
             usersGridView = new DataGridView
@@ -49,7 +50,6 @@ namespace AdminDashboard
             };
 
             usersGridView.RowTemplate.Height = 100;
-            // Add columns
             usersGridView.Columns.Add("IdColumn", "Id");
 
             var imgColumn = new DataGridViewImageColumn
@@ -232,7 +232,7 @@ namespace AdminDashboard
 
             foreach (var user in users.users)
             {
-                user.image = $"https://concise-ant-sound.ngrok-free.app/{user.image}";
+                user.image = $"{Base.Laravel()}{user.image}";
                 Image userImage = null;
                 try
                 {

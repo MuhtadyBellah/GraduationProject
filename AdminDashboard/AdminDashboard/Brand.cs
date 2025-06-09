@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminDashboard.Handler;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -16,14 +17,14 @@ namespace AdminDashboard
 
         public Brand(string token)
         {
-            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.url(0)) };
+            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.NET()) };
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             httpClient.DefaultRequestHeaders.Accept.Add(
                    new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
 
-        public async Task<int?> GetTotalCountAsync()
+        public async Task<int> GetTotalCountAsync()
         {
             try
             {
@@ -40,7 +41,7 @@ namespace AdminDashboard
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                return null;
+                return 0;
             }
         }
         public async Task<IEnumerable<BrandResponse>> GetAllAsync()

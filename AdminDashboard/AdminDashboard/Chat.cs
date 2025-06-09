@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using AdminDashboard.Response;
+using AdminDashboard.Handler;
 
 namespace AdminDashboard
 {
@@ -17,7 +18,7 @@ namespace AdminDashboard
 
         public Chat(string token)
         {
-            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.url(0)) };
+            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.NET()) };
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));

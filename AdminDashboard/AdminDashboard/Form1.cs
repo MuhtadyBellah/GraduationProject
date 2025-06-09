@@ -1,9 +1,12 @@
 ﻿using AdminDashboard.Handler;
 using Microsoft.VisualBasic;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,26 +28,14 @@ namespace AdminDashboard
         private Label profileIcon;
         private Label contentTitle;
 
-        private Panel card;
-        private Label titleLabel;
-        private Button valueLabel;
-        private Label subtitleLabel;
-
         private string Token;
         public adminFrm()
         {
             InitializeComponent();
             InitializeDashboard();
         }
-
         private void InitializeDashboard()
         {
-            // Form settings
-            this.Text = "Admin Dashboard";
-            this.Size = new Size(1000, 600);
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.BackColor = Color.White;
-
             // Sidebar panel
             sidebar = new Panel();
             sidebar.BackColor = Color.FromArgb(51, 51, 76);
@@ -80,6 +71,82 @@ namespace AdminDashboard
             passwordTextBox.AddPlaceholder("Enter your password");
             sidebar.Controls.Add(passwordTextBox);
 
+            // Main content panel
+            contentPanel = new Panel
+            {
+                Visible = false,
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(33, 37, 41),
+                ForeColor = Color.White
+            };
+            this.Controls.Add(contentPanel);
+            contentPanel.BringToFront();
+
+            // Create the admin panel container
+            adminPanel = new Panel
+            {
+                AutoScroll = true,
+                Dock = DockStyle.Top,
+                Height = 60,
+                BackColor = Color.DarkBlue
+            };
+            contentPanel.Controls.Add(adminPanel);
+
+            // Dashboard title in top-left (inside adminPanel)
+            contentTitle = new Label
+            {
+                Font = new Font("Segoe UI", 18, FontStyle.Bold),
+                Text = "Dashboard",
+                Location = new Point(30, 15),
+                AutoSize = true
+            };
+            adminPanel.Controls.Add(contentTitle);
+
+            // Admin info panel int top right 
+            adminInfoPanel = new Panel
+            {
+                Size = new Size(200, 40),
+                Location = new Point(adminPanel.Width - 220, 10),
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                BackColor = Color.Transparent
+            };
+            adminPanel.Controls.Add(adminInfoPanel);
+
+            var flowPanel = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                FlowDirection = FlowDirection.LeftToRight,
+                WrapContents = false,
+                AutoSize = true,
+                BackColor = Color.Transparent,
+                Padding = new Padding(0),
+                Margin = new Padding(0)
+            };
+            adminInfoPanel.Controls.Add(flowPanel);
+
+            // Profile icon (left side)
+            profileIcon = new Label
+            {
+                Text = "👤",
+                Font = new Font("Segoe UI", 14),
+                Size = new Size(40, 40),
+                TextAlign = ContentAlignment.MiddleCenter,
+                Cursor = Cursors.Hand,
+                Margin = new Padding(0, 0, 5, 0)  // Space between icon and name
+            };
+            flowPanel.Controls.Add(profileIcon);
+
+            // Admin name (right side)
+            adminName = new Label
+            {
+                Font = new Font("Segoe UI", 10),
+                AutoSize = true,
+                TextAlign = ContentAlignment.MiddleLeft,
+                Padding = new Padding(0, 10, 0, 0),
+                Margin = new Padding(0)
+            };
+            flowPanel.Controls.Add(adminName);
+
             // Login Button
             loginButton = new Button();
             loginButton.Text = "Login";
@@ -90,12 +157,11 @@ namespace AdminDashboard
             loginButton.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             loginButton.Location = new Point(20, 200);
             loginButton.Size = new Size(160, 35);
-            loginButton.Click += async (sender, e) =>
+            loginButton.Click += async (_, e) =>
             {
                 contentPanel.Visible = false;
                 string email = emailTextBox.Text;
                 string password = passwordTextBox.Text;
-
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
                 {
                     MessageBox.Show("Please enter both email and password");
@@ -104,11 +170,9 @@ namespace AdminDashboard
 
                 loginButton.Enabled = false;
                 loginButton.Text = "Authenticating...";
-
                 try
                 {
-                    var login = new Login(email, password);
-                    var userInfo = await login.AuthenticateUserAsync();
+                    var userInfo = await new Login().AuthenticateUserAsync(email, password);
                     if (userInfo == null)
                     {
                         MessageBox.Show("Invalid credentials", "Login Failed");
@@ -123,7 +187,7 @@ namespace AdminDashboard
                     adminName.Text = userInfo?.User.Name;
                     contentPanel.Visible = true;
 
-                    /*
+                    /* Chat
                     if(userInfo.User.Role == "user")
                     {
                         // Display instruction label
@@ -214,12 +278,8 @@ namespace AdminDashboard
                     // Add button to the same panel
                     adminInfoPanel.Controls.Add(chatButton);
                     */
-                    await CreateMetricCard(contentPanel, "Manage Users", "users", "Users Counts", 30, 80, Color.Gray);
-                    await CreateMetricCard(contentPanel, "Manage Coupons", "coupons", "Revenue", 280, 80, Color.Red);
-                    await CreateMetricCard(contentPanel, "Manage Orders", "orders", "Orders Counts", 530, 80, Color.Green);
-                    await CreateMetricCard(contentPanel, "Manage Products", "products", "Products Counts", 30, 280, Color.Blue);
-                    await CreateMetricCard(contentPanel, "Manage Brands", "brands", "Brands Counts", 280, 280, Color.BlueViolet);
-                    await CreateMetricCard(contentPanel, "Manage Categories", "categories", "Categories Counts", 530, 280, Color.DarkBlue);
+
+                    await LoadDashboardMetricsAsync(Token);
                 }
                 catch (Exception ex)
                 {
@@ -233,189 +293,126 @@ namespace AdminDashboard
                 }
             };
             sidebar.Controls.Add(loginButton);
-
-            // Main content panel
-            contentPanel = new Panel
-            {
-                Visible = false,
-                Dock = DockStyle.Fill,
-                BackColor = Color.FromArgb(33, 37, 41),
-                ForeColor = Color.White
-            };
-            this.Controls.Add(contentPanel);
-            contentPanel.BringToFront();
-
-            // Create the admin panel container
-            adminPanel = new Panel
-            {
-                AutoScroll = true,
-                Dock = DockStyle.Top,
-                Height = 60,
-                BackColor = Color.DarkBlue
-            };
-            contentPanel.Controls.Add(adminPanel);
-
-            // Dashboard title in top-left (inside adminPanel)
-            contentTitle = new Label
-            {
-                Font = new Font("Segoe UI", 18, FontStyle.Bold),
-                Text = "Dashboard",
-                Location = new Point(30, 15),
-                AutoSize = true
-            };
-            adminPanel.Controls.Add(contentTitle);
-
-            // Admin info panel int top right 
-            adminInfoPanel = new Panel
-            {
-                Size = new Size(200, 40),
-                Location = new Point(adminPanel.Width - 220, 10),
-                Anchor = AnchorStyles.Top | AnchorStyles.Right,
-                BackColor = Color.Transparent
-            };
-            adminPanel.Controls.Add(adminInfoPanel);
-
-            // Admin name label
-            adminName = new Label
-            {
-                Font = new Font("Segoe UI", 10),
-                TextAlign = ContentAlignment.MiddleRight,
-                Dock = DockStyle.Fill,
-                AutoSize = false,
-                Padding = new Padding(0, 10, 10, 0)
-            };
-            adminInfoPanel.Controls.Add(adminName);
-
-            // Profile icon
-            profileIcon = new Label
-            {
-                Text = "👤",
-                Font = new Font("Segoe UI", 14),
-                Size = new Size(40, 40),
-                Dock = DockStyle.Right,
-                TextAlign = ContentAlignment.MiddleCenter,
-                Cursor = Cursors.Hand
-            };
-            adminInfoPanel.Controls.Add(profileIcon);
         }
-
-        private async Task CreateMetricCard(Panel parent, string title, string value, string subtitle, int x, int y, Color color, int width = 220)
+        private async Task LoadDashboardMetricsAsync(string Token)
         {
-            card = new Panel();
-            card.BackColor = color;
-            card.Size = new Size(width, 150);
-            card.Location = new Point(x, y);
-            card.Padding = new Padding(15);
-            parent.Controls.Add(card);
+            var metrics = new[]
+                    {
+                        new { Title="Manage Users",      Key="users",     Subtitle="Users Counts",      X=30,  Y=80,  Color=Color.Gray },
+                        new { Title="Manage Coupons",    Key="coupons",   Subtitle="Coupons Counts",    X=280, Y=80,  Color=Color.Red },
+                        new { Title="Manage Orders",     Key="orders",    Subtitle="Orders Counts",     X=530, Y=80,  Color=Color.Green },
+                        new { Title="Manage Products",   Key="products",  Subtitle="Products Counts",   X=30,  Y=280, Color=Color.Blue },
+                        new { Title="Manage Brands",     Key="brands",    Subtitle="Brands Counts",     X=280, Y=280, Color=Color.BlueViolet },
+                        new { Title="Manage Categories", Key="categories",Subtitle="Categories Counts", X=530, Y=280, Color=Color.DarkBlue }
+                    };
 
-            titleLabel = new Label();
-            titleLabel.Text = title;
-            titleLabel.ForeColor = Color.White;
-            titleLabel.Font = new Font("Segoe UI", 15, FontStyle.Bold);
-            titleLabel.Location = new Point(15, 15);
-            titleLabel.AutoSize = true;
-            card.Controls.Add(titleLabel);
-
-            int? cnt = null;
-            if (value == "products")
-                cnt = await new Product(Token).GetTotalCountAsync();
-
-            else if (value == "brands")
-                cnt = await new Brand(Token).GetTotalCountAsync();
-
-            else if (value == "categories")
-                cnt = await new Category(Token).GetTotalCountAsync();
-                
-            else if (value == "users")
-                cnt = await new Profile(Token).GetTotalCountAsync();
-
-            else if (value == "coupons")
-                cnt = await new Coupon(Token).GetTotalCountAsync();
-
-            else if (value == "orders")
-                cnt = await new Order(Token).GetTotalCountAsync();
-
-            valueLabel = new Button();
-            valueLabel.Text = cnt?.ToString() ?? "";
-            valueLabel.ForeColor = Color.White;
-            valueLabel.Font = new Font("Segoe UI", 24, FontStyle.Bold);
-            valueLabel.Location = new Point(15, 45);
-            valueLabel.AutoSize = true;
-            valueLabel.Click += (sender, e) =>
+            contentPanel.SuspendLayout();
+            for (int i = 0; i < metrics.Length; i++)
             {
-                var clickedLabel = (Button)sender;
-                string currentValue = value;
-
-                clickedLabel.Enabled = false;
-                clickedLabel.Cursor = Cursors.WaitCursor;
-
-                Form res;
-                if (currentValue == "users")
-                    res = new UsersManagementForm(Token);
-
-                else if (currentValue == "coupons")
-                    res = new CouponsManagementForm(Token);
-
-                else if (currentValue == "orders")
-                    res = new OrdersManagementForm(Token);
-
-                else if (currentValue == "products")
-                    res = new ProductsManagementForm(Token);
-
-                else if (currentValue == "brands")
-                    res = new BrandsManagementForm(Token);
-
-                else if (currentValue == "categories")
-                    res = new CategoriesManagementForm(Token);
-
-                else
-                    throw new NotImplementedException();
-
-                res.StartPosition = FormStartPosition.CenterParent;
-                res.FormClosed += async (s, args) =>
+                var key = metrics[i].Key;
+                var card = new MetricCard
                 {
-                    int? newCnt = null;
-                    if (currentValue == "products")
-                        newCnt = await new Product(Token).GetTotalCountAsync();
-
-                    else if (currentValue == "brands")
-                        newCnt = await new Brand(Token).GetTotalCountAsync();
-
-                    else if (currentValue == "categories")
-                        newCnt = await new Category(Token).GetTotalCountAsync();
-
-                    else if (currentValue == "users")
-                        newCnt = await new Profile(Token).GetTotalCountAsync();
-
-                    else if (currentValue == "coupons")
-                        newCnt = await new Coupon(Token).GetTotalCountAsync();
-
-                    else if (currentValue == "orders")
-                        newCnt = await new Order(Token).GetTotalCountAsync();
-
-                    clickedLabel.Text = newCnt?.ToString() ?? "";
-
-                    clickedLabel.Enabled = true;
-                    clickedLabel.Cursor = Cursors.Hand;
+                    Title = metrics[i].Title,
+                    Tag = key,
+                    Count = 0,
+                    Subtitle = metrics[i].Subtitle,
+                    CardColor = metrics[i].Color,
+                    Location = new Point(metrics[i].X, metrics[i].Y)
                 };
-                res.Show(this);
-            };
-            card.Controls.Add(valueLabel);
+                card.CardClicked += (s, ev) =>
+                {
+                    var clickedCard = (MetricCard)s;
+                    var currentValue = clickedCard.Tag.ToString();
 
-            if (!string.IsNullOrEmpty(subtitle))
-            {
-                subtitleLabel = new Label();
-                subtitleLabel.Text = subtitle;
-                subtitleLabel.ForeColor = Color.White;
-                subtitleLabel.Font = new Font("Segoe UI", 10);
-                subtitleLabel.Location = new Point(15, 95);
-                subtitleLabel.AutoSize = true;
-                card.Controls.Add(subtitleLabel);
+                    clickedCard.Enabled = false;
+                    clickedCard.Cursor = Cursors.WaitCursor;
+
+                    Form res = (currentValue == "users") ? res = new UsersManagementForm(Token) :
+                        (currentValue == "coupons") ? res = new CouponsManagementForm(Token) :
+                        (currentValue == "orders") ? res = new OrdersManagementForm(Token) :
+                        (currentValue == "products") ? res = new ProductsManagementForm(Token) :
+                        (currentValue == "brands") ? res = new BrandsManagementForm(Token) :
+                        (currentValue == "categories") ? res = new CategoriesManagementForm(Token) :
+                        throw new InvalidOperationException($"Unknown key: {key}");
+
+                    res.StartPosition = FormStartPosition.CenterParent;
+                    res.FormClosed += async (se, args) =>
+                    {
+                        int newCnt = 0;
+                        if (currentValue == "products")
+                            newCnt = await new Product(Token).GetTotalCountAsync();
+
+                        else if (currentValue == "brands")
+                            newCnt = await new Brand(Token).GetTotalCountAsync();
+
+                        else if (currentValue == "categories")
+                            newCnt = await new Category(Token).GetTotalCountAsync();
+
+                        else if (currentValue == "users")
+                            newCnt = await new Profile(Token).GetTotalCountAsync();
+
+                        else if (currentValue == "coupons")
+                            newCnt = await new Coupon(Token).GetTotalCountAsync();
+
+                        else if (currentValue == "orders")
+                            newCnt = await new Order(Token).GetTotalCountAsync();
+
+                        clickedCard.RefreshCount(newCnt);
+                        clickedCard.Enabled = true;
+                        clickedCard.Cursor = Cursors.Hand;
+                    };
+                    res.Show(this);
+                };
+                contentPanel.Controls.Add(card);
+
+                ControlHandler.SetDoubleBuffered(card);
+                try
+                {
+                    int count = await FetchCount(key, Token);
+                    if (!card.IsDisposed)
+                    {
+                        card.Invoke((MethodInvoker)(() => card.RefreshCount(count)));
+                    }
+                }
+                catch
+                {
+                    if (!card.IsDisposed)
+                    {
+                        card.Invoke((MethodInvoker)(() => card.RefreshCount(-1)));
+                    }
+                }
             }
+            contentPanel.ResumeLayout(true);
+        }
+        private async Task<int> FetchCount(string key, string token)
+        {
+            switch (key)
+            {
+                case "users": return await new Profile(token).GetTotalCountAsync();
+                case "coupons": return await new Coupon(token).GetTotalCountAsync();
+                case "orders": return await new Order(token).GetTotalCountAsync();
+                case "products": return await new Product(token).GetTotalCountAsync();
+                case "brands": return await new Brand(token).GetTotalCountAsync();
+                case "categories": return await new Category(token).GetTotalCountAsync();
+                default: return 0;
+            };
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            Text = "Admin Dashboard";
+            Size = new Size(1000, 600);
+            StartPosition = FormStartPosition.CenterScreen;
+            BackColor = Color.White;
+            DoubleBuffered = true;
 
+            ControlHandler.SetDoubleBuffered(contentPanel);
+            ControlHandler.SetResizeRedraw(contentPanel);
+            ControlHandler.SetDoubleBuffered(adminPanel);
+            ControlHandler.SetResizeRedraw(adminInfoPanel);
+
+            foreach (var c in contentPanel.Controls)
+                if (c is MetricCard card)
+                    ControlHandler.SetDoubleBuffered(card);
         }
     }
 }

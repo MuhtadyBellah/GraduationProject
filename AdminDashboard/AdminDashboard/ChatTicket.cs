@@ -8,6 +8,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using AdminDashboard.Request;
 using AdminDashboard.Response;
+using AdminDashboard.Handler;
 
 namespace AdminDashboard
 {
@@ -17,13 +18,13 @@ namespace AdminDashboard
 
         public ChatTicket(string token)
         {
-            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.url(0)) };
+            this.httpClient = new HttpClient { BaseAddress = new Uri(Base.NET()) };
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<int?> GetTotalCountAsync()
+        public async Task<int> GetTotalCountAsync()
         {
             try
             {
@@ -40,7 +41,7 @@ namespace AdminDashboard
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                return null;
+                return 0;
             }
         }
         public async Task<IEnumerable<ChatTicketResponse>> GetAllAsync()

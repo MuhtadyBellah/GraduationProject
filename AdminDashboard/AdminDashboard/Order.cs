@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Security.Policy;
 using AdminDashboard.Request;
 using AdminDashboard.Request.AdminDashboard.Request;
+using AdminDashboard.Handler;
 
 namespace AdminDashboard
 {
@@ -18,13 +19,13 @@ namespace AdminDashboard
         
         public Order(string token)
         {
-            httpClient = new HttpClient { BaseAddress = new Uri(Base.url(1)) };
+            httpClient = new HttpClient { BaseAddress = new Uri(Base.Laravel()) };
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<int?> GetTotalCountAsync()
+        public async Task<int> GetTotalCountAsync()
         {
             try
             {
@@ -41,7 +42,7 @@ namespace AdminDashboard
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
-                return null;
+                return 0;
             }
         }
         public async Task<OrderResponse> GetAllAsync()

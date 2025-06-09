@@ -2,11 +2,12 @@
 using AdminDashboard.Request;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Internal;
-using Newtonsoft.Json.Linq;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,28 +16,26 @@ namespace AdminDashboard
     public partial class ProductsManagementForm : Form
     {
         private FlowLayoutPanel productsPanel;
+        private Panel headerPanel;
         private readonly string _token;
         private Button addProductButton;
         private int currentPage = 1;
-        private int pageSize = 3;
+        private int pageSize = 2;
         private int totalItems = 0;
         private Panel paginationPanel;
+        private FlowLayoutPanel flowPanel;
+        private static readonly MemoryCache _imageCache = new MemoryCache(new MemoryCacheOptions());
+        private const int MaxCacheSizeMB = 100;
 
         public ProductsManagementForm(string token)
         {
-            InitializeComponent();
             _token = token;
+            InitializeComponent();
             InitializeForm();
-            LoadProducts();
         }
-        
+
         private void InitializeForm()
         {
-            // Form settings
-            this.Text = "Manage Products";
-            this.Size = new Size(1000, 700);
-            this.StartPosition = FormStartPosition.CenterScreen;
-
             // Main panel with scroll
             var mainPanel = new Panel
             {
@@ -46,7 +45,7 @@ namespace AdminDashboard
             this.Controls.Add(mainPanel);
 
             // Header panel
-            var headerPanel = new Panel
+            headerPanel = new Panel
             {
                 Dock = DockStyle.Top,
                 Height = 60,
@@ -80,23 +79,37 @@ namespace AdminDashboard
             };
             mainPanel.Controls.Add(productsPanel);
         }
-
-        private async void LoadProducts()
-        {
-            var pagedResponse = await new Product(_token).GetAllPagedAsync(pageSize , currentPage);
-
-            totalItems = pagedResponse.count;
-            productsPanel.Controls.Clear();
-
-            foreach (var product in pagedResponse.data)
+        private async Task LoadProductsAsync()
+        { 
+            var loadingLabel = new Label
             {
-                var productCard = CreateProductCard(product);
-                productsPanel.Controls.Add(productCard);
+                Text = "Loading products...",
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Font = new Font("Segoe UI", 12)
+            };
+            productsPanel.Controls.Clear();
+            productsPanel.Controls.Add(loadingLabel);
+            productsPanel.Refresh();
+
+            try
+            {
+                var pagedResponse = await new Product(_token).GetAllPagedAsync(pageSize, currentPage);
+                var cards = pagedResponse.data.Select(p => (Panel)CreateProductCard(p)).ToArray();
+
+                productsPanel.SuspendLayout();
+                productsPanel.Controls.Clear();
+                productsPanel.Controls.AddRange(cards);
+                productsPanel.ResumeLayout();
+
+                totalItems = pagedResponse.count;
+                RenderPaginationControls();
             }
-
-            RenderPaginationControls();
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading products: {ex.Message}");
+            }
         }
-
         private void RenderPaginationControls()
         {
             // Remove old panel
@@ -112,7 +125,7 @@ namespace AdminDashboard
             };
 
             // FlowLayoutPanel to hold buttons
-            var flowPanel = new FlowLayoutPanel
+            flowPanel = new FlowLayoutPanel
             {
                 AutoSize = true,
                 FlowDirection = FlowDirection.LeftToRight,
@@ -140,37 +153,46 @@ namespace AdminDashboard
                     btn.BackColor = Color.LightGray;
                 }
 
-                btn.Click += (s, e) =>
+                btn.Click += async (s, e) =>
                 {
                     if (goToPage.HasValue)
                     {
                         currentPage = goToPage.Value;
-                        LoadProducts();
+                        await LoadProductsAsync();
                     }
                 };
-
                 flowPanel.Controls.Add(btn);
             }
 
             // Prev button
             AddButton("<", currentPage - 1, currentPage > 1);
-
+            bool dotPrinted = false;
             for (int i = 1; i <= totalPages; i++)
             {
-                if (i == 1 || i == totalPages || Math.Abs(i - currentPage) <= 1)
-                {
+                if (i == 1 || 
+                    i == totalPages || 
+                    Math.Abs(i - currentPage) <= 1) 
+                    
                     AddButton(i.ToString(), i, i != currentPage, i == currentPage);
-                }
-                else if (i == 2 && currentPage > 4 || i == totalPages - 1 && currentPage < totalPages - 3)
+
+                else if(i == (1 + currentPage) / 2 || 
+                    i == (totalPages + currentPage) / 2)
                 {
-                    AddButton("...", null, false);
-                    i = (i == 2) ? currentPage - 2 : totalPages - 1;
+                    AddButton(i.ToString(), i);
+                    dotPrinted = false;
+                }
+                else
+                {
+                    // Print "..." only once between ranges
+                    if (!dotPrinted)
+                    {
+                        AddButton("...", null, false);
+                        dotPrinted = true;
+                    }
                 }
             }
-
             // Next button
             AddButton(">", currentPage + 1, currentPage < totalPages);
-
             this.Controls.Add(paginationPanel);
             paginationPanel.BringToFront();
         }
@@ -195,8 +217,25 @@ namespace AdminDashboard
             };
 
             if (!string.IsNullOrEmpty(product.PictureUrl))
-                pictureBox.Load(product.PictureUrl);
+            {
+                if (_imageCache.TryGetValue(product.PictureUrl, out Image img))
+                {
+                    pictureBox.Image = img;
+                }
+                else
+                {
+                    // Using a simple built-in placeholder if Resources are not set up
+                    pictureBox.Image = SystemIcons.Information.ToBitmap();
 
+                    _ = LoadImageAsync(product.PictureUrl, pictureBox);
+                }
+            }
+            else
+            {
+                // Using a simple built-in placeholder if Resources are not set up
+                pictureBox.Image = SystemIcons.Information.ToBitmap();
+
+            }
             card.Controls.Add(pictureBox);
 
             // Product details (right side)
@@ -274,17 +313,51 @@ namespace AdminDashboard
             };
             deleteButton.Click += (s, e) => DeleteProduct((int)deleteButton.Tag);
             card.Controls.Add(deleteButton);
-
             return card;
         }
+        private async Task LoadImageAsync(string url, PictureBox pictureBox)
+        {
+            try
+            {
+                using (var httpClient = new HttpClient())
+                using (var response = await httpClient.GetAsync(url).ConfigureAwait(false))
+                using (var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false))
+                {
+                    var image = Image.FromStream(stream);
+                    // Add to cache if under size limit
+                    var totalCacheSize = _imageCache.GetCurrentStatistics()?.CurrentEstimatedSize ?? 0;
+                    if (totalCacheSize + stream.Length < MaxCacheSizeMB * 1024 * 1024)
+                    {
+                        _imageCache.Set(url, image, new MemoryCacheEntryOptions
+                        {
+                            Size = stream.Length,
+                            SlidingExpiration = TimeSpan.FromMinutes(30)
+                        });
+                    }
 
+                    // Update UI if still needed
+                    if (!pictureBox.IsDisposed)
+                    {
+                        pictureBox.Invoke((Action)(() =>
+                        {
+                            if (!pictureBox.IsDisposed)
+                                pictureBox.Image = image;
+                        }));
+                    }
+                }
+            }
+            catch
+            {
+                pictureBox.Image = null;
+            }
+        }
         private async void DeleteProduct(int productId)
         {
             if (MessageBox.Show("Delete this product?", "Confirm",
                 MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                if(await new Product(_token).DeleteAsync(productId))
-                    LoadProducts();
+                if (await new Product(_token).DeleteAsync(productId))
+                    await LoadProductsAsync();
             }
         }
 
@@ -434,7 +507,7 @@ namespace AdminDashboard
             if (success)
             {
                 this.Controls.Remove(overlayPanel);
-                LoadProducts();
+                await LoadProductsAsync();
             }
             else
             {
@@ -442,9 +515,9 @@ namespace AdminDashboard
             }
         }
 
-        private void ProductsManagementForm_Load(object sender, EventArgs e)
+        private async void ProductsManagementForm_Load(object sender, EventArgs e)
         {
-            
+            await LoadProductsAsync();
         }
     }
 }
